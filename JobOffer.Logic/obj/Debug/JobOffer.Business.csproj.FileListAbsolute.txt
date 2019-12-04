@@ -1,0 +1,11 @@
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOffer.Business.csprojAssemblyReference.cache
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOffer.Business.csproj.CoreCompileInputs.cache
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Database1.mdf
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Database1_log.ldf
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\JobOfferLogic.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\JobOfferLogic.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\JobOffer.DAL.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\JobOffer.DAL.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOffer.Business.csproj.CopyComplete
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.pdb

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Developer platform | vacatures";
+}
+
+@model List<DeveloperPlatformView.Models.JobOfferModel> 
+
+
+<h2>Alle vacatures</h2>
+
+<p>Bekijk hier alle vacatures</p>
+
+<table class="table
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Vacature naam</th>
+            <th scope="col">Bedrijfsnaam</th>
+            <th scope="col">Beschikbaarheid</th>
+            <th scope="col">Vacature bekijken</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var jobOffer in Model)
+        {
+            <tr>
+
+                <th scope="row">1</th>
+                <td>@jobOffer.Name</td>
+                <td>Otto</td>
+                <td>@jobOffer.JobType</td>
+                <td><button class="btn btn-success">Vacature bekijken</button></td>
+            </tr>
+
+        }
+    </tbody>
+</table>

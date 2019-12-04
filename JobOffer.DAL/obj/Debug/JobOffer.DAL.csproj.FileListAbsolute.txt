@@ -1,0 +1,8 @@
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Database1.mdf
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Database1_log.ldf
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csprojAssemblyReference.cache
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csproj.CoreCompileInputs.cache
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.pdb
