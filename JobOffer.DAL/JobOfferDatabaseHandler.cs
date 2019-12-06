@@ -81,13 +81,21 @@ namespace JobOffer.DAL
             return dto;
         }
 
-        public void AddJobOffer()
+        public void AddJobOffer(string name, string description, int companyId, int catId, int applicationId, string jobType)
         {
-            string query = "insert into JobOffers(name, description, companyId, catId, applicationId, jobType) values( 'ios', 'hallo', 1, 1, 2, 'fulltime')";
+            string query = "insert into JobOffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType)";
 
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
+            
             SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Name", name);
+            cmd.Parameters.AddWithValue("@Description", description);
+            cmd.Parameters.AddWithValue("@CompanyId", companyId);
+            cmd.Parameters.AddWithValue("@CatId", catId);
+            cmd.Parameters.AddWithValue("@ApplicationId", applicationId);
+            cmd.Parameters.AddWithValue("@JobType", jobType);
+
             cmd.ExecuteReader();
         }
     }

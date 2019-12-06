@@ -22,15 +22,14 @@
     <tbody>
         @foreach (var jobOffer in Model)
         {
-            <tr>
+        <tr>
 
-                <th scope="row">@jobOffer.JobOfferId</th>
-                <td>@jobOffer.Name</td>
-                <td>Otto</td>
-                <td>@jobOffer.JobType</td>
-                <td><button class="btn btn-success">Vacature bekijken</button></td>
-            </tr>
-
+            <th scope="row">@jobOffer.JobOfferId</th>
+            <td>@jobOffer.Name</td>
+            <td>Otto</td>
+            <td>@jobOffer.JobType</td>
+            <td><a href="joboffer/showjoboffer/@jobOffer.JobOfferId" ><button class="btn btn-success">Vacature bekijken</button></a></td>
+        </tr>
         }
     </tbody>
 </table>

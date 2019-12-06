@@ -32,7 +32,7 @@ namespace JobOffer.Business
 
                 allJobOffers.Add(jobOffer);
             }
-            //handler.AddJobOffer();
+           handler.AddJobOffer("GoLang Developer Gezocht", "test", 1, 1, 1, "Fulltime");
             return allJobOffers;
         }
 
