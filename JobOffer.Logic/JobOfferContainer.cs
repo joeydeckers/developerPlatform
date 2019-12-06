@@ -8,49 +8,33 @@ using Interfaces;
 
 namespace JobOffer.Business
 {
-    public class JobOfferContainer: IJobOfferContainerData
+    public class JobOfferContainer
     {
-        public int _idJoboffer { get; internal set; }
-        public string _name { get; internal set; }
-        public string _description { get; internal set; }
-        public int _companyId { get; internal set; }
-        public int _catId { get; internal set; }
-        public int _applicationId { get; internal set; }
-        public string _jobType { get; internal set; }
-
-
-        public JobOfferContainer(int idJoboffer, string name, string description, int companyId, int catId, int applicationId, string jobType)
+        public static List<JobOfferItem> GetAllJobOffers()
         {
-            _idJoboffer = idJoboffer;
-            _name = name;
-            _description = description;
-            _companyId = companyId;
-            _catId = catId;
-            _applicationId = applicationId;
-            _jobType = jobType;
-        }
-
-        public static List<JobOfferContainer> GetAllJobOffers()
-        {
-            List<JobOfferContainer> allJobOffers = new List<JobOfferContainer>();
+            List<JobOfferItem> allJobOffers = new List<JobOfferItem>();
             JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
 
             var jobOffersFromDatabse = handler.GetJoboffers();
 
             foreach (var jobOfferDto in jobOffersFromDatabse)
             {
-                JobOfferContainer jobOffer = new JobOfferContainer(jobOfferDto.idJoboffer, jobOfferDto.name, jobOfferDto.description, jobOfferDto.companyId, jobOfferDto.catId, jobOfferDto.applicationId, jobOfferDto.jobType);
+                //JobOfferItem jobOffer = new JobOfferItem(jobOfferDto.IdJoboffer, jobOfferDto.Name, jobOfferDto.Description, jobOfferDto.CompanyId, jobOfferDto.CatId, jobOfferDto.ApplicationId, jobOfferDto.JobType);
+                JobOfferItem jobOffer = new JobOfferItem();
+                jobOffer.IdJoboffer = jobOfferDto.IdJoboffer;
+                jobOffer.Name = jobOfferDto.Name;
+                jobOffer.Description = jobOfferDto.Description;
+                jobOffer.CompanyId = jobOfferDto.CompanyId;
+                jobOffer.CatId = jobOfferDto.CatId;
+                jobOffer.ApplicationId = jobOfferDto.ApplicationId;
+                jobOffer.JobType = jobOfferDto.JobType;
+
+
                 allJobOffers.Add(jobOffer);
             }
-
+            //handler.AddJobOffer();
             return allJobOffers;
         }
 
-        public override string ToString()
-        {
-            return _name;
-        }
     }
-
-
 }

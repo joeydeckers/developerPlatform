@@ -9,12 +9,12 @@ namespace JobOffer.DAL
 {
     public class JobOfferDto
     {
-        public int idJoboffer { get; internal set; }
-        public string name { get; internal set; }
-        public string description { get; internal set; }
-        public int companyId { get; internal set; }
-        public int catId { get; internal set; }
-        public int applicationId { get; internal set; }
-        public string jobType { get; internal set; }
+        public int IdJoboffer { get; internal set; }
+        public string Name { get; internal set; }
+        public string Description { get; internal set; }
+        public int CompanyId { get; internal set; }
+        public int CatId { get; internal set; }
+        public int ApplicationId { get; internal set; }
+        public string JobType { get; internal set; }
     }
 }

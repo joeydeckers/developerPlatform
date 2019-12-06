@@ -15,3 +15,23 @@ C:\Users\JoeyD\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOffer.DA
 C:\Users\JoeyD\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.csproj.CopyComplete
 C:\Users\JoeyD\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.exe
 C:\Users\JoeyD\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\Database1.mdf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\Database1_log.ldf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOfferTest.View.exe.config
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOfferTest.View.exe
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOfferTest.View.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOfferLogic.dll
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOffer.DAL.dll
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOfferLogic.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOffer.DAL.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.csprojAssemblyReference.cache
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.Form1.resources
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.Properties.Resources.resources
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.csproj.GenerateResource.cache
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.csproj.CoreCompileInputs.cache
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.csproj.CopyComplete
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.exe
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\obj\Debug\JobOfferTest.View.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\Database2.mdf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\Database2_log.ldf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOfferTest.View\bin\Debug\JobOffer.DAL.dll.config

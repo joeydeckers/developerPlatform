@@ -41,10 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JobOffer.cs" />
+    <Compile Include="JobOfferItem.cs" />
+    <Compile Include="JobOfferContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{461c8895-e0fb-4bd0-b2b2-2ee208a6f0af}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JobOffer.DAL\JobOffer.DAL.csproj">
       <Project>{722d45d1-d24b-471b-b21f-4f7549089130}</Project>
       <Name>JobOffer.DAL</Name>

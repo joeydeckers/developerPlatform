@@ -14,7 +14,7 @@ namespace DeveloperPlatformView.Controllers
 
         public IActionResult Index()
         {
-            List<JobOfferContainer> allJobOffers = new List<JobOfferContainer>();
+            List<JobOfferItem> allJobOffers = new List<JobOfferItem>();
 
             List<JobOfferModel> allJobOfferModels = new List<JobOfferModel>();
 
@@ -25,14 +25,31 @@ namespace DeveloperPlatformView.Controllers
             {
                 JobOfferModel viewModel = new JobOfferModel()
                 {
-                    Name = jobOffer._name,
-                    JobType = jobOffer._jobType
+                    JobOfferId = jobOffer.IdJoboffer,
+                    Name = jobOffer.Name,
+                    JobType = jobOffer.JobType
                 };
                 allJobOfferModels.Add(viewModel);
             }
 
             return View(allJobOfferModels);
 
+        }
+        public IActionResult ShowJobOffer() {
+
+            JobOfferItem jobOffer = new JobOfferItem();
+
+            jobOffer = jobOffer.GetJobOffer(1);
+
+            JobOfferModel viewModel = new JobOfferModel()
+            {
+                JobOfferId = jobOffer.IdJoboffer,
+                Name = jobOffer.Name,
+                Description = jobOffer.Description,
+                JobType = jobOffer.JobType
+            };
+
+            return View(viewModel);
         }
 
 

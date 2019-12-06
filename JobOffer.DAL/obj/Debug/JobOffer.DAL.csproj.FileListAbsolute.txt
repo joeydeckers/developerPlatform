@@ -6,3 +6,25 @@ C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csp
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csproj.CoreCompileInputs.cache
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.dll
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Database1.mdf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Database1_log.ldf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.dll
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csprojAssemblyReference.cache
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.dll
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.pdb
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Database2.mdf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Database2_log.ldf
+C:\Users\Joey Deckers\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.dll.config
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\Database1.mdf
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\Database1_log.ldf
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\Database2.mdf
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\Database2_log.ldf
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.dll.config
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.dll
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\bin\Debug\JobOffer.DAL.pdb
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csprojAssemblyReference.cache
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.csproj.CoreCompileInputs.cache
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.dll
+C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.pdb

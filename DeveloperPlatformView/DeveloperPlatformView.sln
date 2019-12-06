@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobOfferTest.View", "..\Job
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobOffer.Business", "..\JobOffer.Logic\JobOffer.Business.csproj", "{681C951C-C95C-4045-9300-4009ECE46E38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{461C8895-E0FB-4BD0-B2B2-2EE208A6F0AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{681C951C-C95C-4045-9300-4009ECE46E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681C951C-C95C-4045-9300-4009ECE46E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681C951C-C95C-4045-9300-4009ECE46E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461C8895-E0FB-4BD0-B2B2-2EE208A6F0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461C8895-E0FB-4BD0-B2B2-2EE208A6F0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461C8895-E0FB-4BD0-B2B2-2EE208A6F0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461C8895-E0FB-4BD0-B2B2-2EE208A6F0AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

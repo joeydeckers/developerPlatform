@@ -9,6 +9,6 @@ namespace Interfaces
 {
     public interface IJobOfferContainerData
     {
-
+         JobOfferDto GetAllJobOffers();
     }
 }
