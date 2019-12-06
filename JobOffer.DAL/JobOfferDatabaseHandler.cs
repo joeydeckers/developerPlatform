@@ -11,7 +11,7 @@ namespace JobOffer.DAL
     {
 
         // dit moet op een andere manier want nu moet ik altijd het pad aanpassen
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
 
         public List<JobOfferDto> GetJoboffers() {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();

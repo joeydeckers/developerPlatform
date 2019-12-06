@@ -41,3 +41,8 @@ C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.L
 C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.Logic\obj\Debug\JobOffer.Business.csproj.CopyComplete
 C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.dll
 C:\Users\JoeyD\Desktop\developerPlatform_production\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Database2.mdf
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Database2_log.ldf
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Interfaces.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Interfaces.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\JobOffer.DAL.dll.config

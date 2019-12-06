@@ -35,11 +35,11 @@ namespace DeveloperPlatformView.Controllers
             return View(allJobOfferModels);
 
         }
-        public IActionResult ShowJobOffer() {
+        public IActionResult ShowJobOffer(int id) {
 
             JobOfferItem jobOffer = new JobOfferItem();
 
-            jobOffer = jobOffer.GetJobOffer(1);
+            jobOffer = jobOffer.GetJobOffer(id);
 
             JobOfferModel viewModel = new JobOfferModel()
             {

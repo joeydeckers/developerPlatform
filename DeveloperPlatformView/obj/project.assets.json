@@ -12594,11 +12594,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform_production\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
+      "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
       "projectName": "DeveloperPlatformView",
-      "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform_production\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
+      "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
       "packagesPath": "C:\\Users\\JoeyD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform_production\\developerPlatform\\DeveloperPlatformView\\obj\\",
+      "outputPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12617,8 +12617,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\JoeyD\\Desktop\\developerPlatform_production\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
-              "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform_production\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj"
+            "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
+              "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj"
             }
           }
         }
