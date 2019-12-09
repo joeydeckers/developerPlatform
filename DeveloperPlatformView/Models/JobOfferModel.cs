@@ -6,7 +6,10 @@ namespace DeveloperPlatformView.Models
     public class JobOfferModel
     {
         public int JobOfferId { get; set; }
+
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Description { get; set; }
         public int CompanyId { get; set; }
         public int CatId { get; set; }

@@ -40,3 +40,17 @@ C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\obj\Debug\Interfaces.csproj.
 C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
 C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Database1.mdf
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Database1_log.ldf
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Database2.mdf
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Database2_log.ldf
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\JobOffer.DAL.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\JobOffer.DAL.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\JobOffer.DAL.dll.config
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.pdb

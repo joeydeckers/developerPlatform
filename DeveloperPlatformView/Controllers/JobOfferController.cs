@@ -52,6 +52,10 @@ namespace DeveloperPlatformView.Controllers
             return View(viewModel);
         }
 
+        public IActionResult CreateJobOffer()
+        {
+            return View();
+        }   
 
     }
 }
