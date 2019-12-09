@@ -48,5 +48,11 @@ namespace JobOffer.Business
 
             return jobOffer;
         }
+
+        public void CreateJobOffer(string name, string description, int companyid, int catId, int applicationId, string jobType)
+        {
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
+            handler.AddJobOffer(name, description, companyid, catId, applicationId, jobType);
+        }
     }
 }

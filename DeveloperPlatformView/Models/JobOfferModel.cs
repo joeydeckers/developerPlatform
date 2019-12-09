@@ -14,6 +14,7 @@ namespace DeveloperPlatformView.Models
         public int CompanyId { get; set; }
         public int CatId { get; set; }
         public int ApplicationId { get; set; }
+        [Required]
         public string JobType { get; set; }
     }
 }

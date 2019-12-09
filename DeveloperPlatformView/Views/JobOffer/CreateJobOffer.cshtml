@@ -2,6 +2,19 @@
 @{
     ViewData["Title"] = "CreateJobOffer";
 }
+@model DeveloperPlatformView.Models.JobOfferModel
 
-<h2>CreateJobOffer</h2>
 
+<h2>Maak hier je vacature aan</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @Html.ValidationMessageFor(m => Model.Name)
+    <p>Vacature naam: @Html.TextBoxFor(m => Model.Name, new { Class="form-control" })</p>
+    @Html.ValidationMessageFor(m => Model.Description)
+    <p>Vacature beschrijving: @Html.TextAreaFor(m => Model.Description, new { Class="form-control" })</p>
+    @Html.ValidationMessageFor(m => Model.JobType)
+    <p>Beschikbaarheid: @Html.TextBoxFor(m => Model.JobType , new { Class="form-control" })</p>
+    <input class="btn btn-success" type="submit" value="Maak vacature" />
+}

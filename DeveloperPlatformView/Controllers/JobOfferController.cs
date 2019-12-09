@@ -10,7 +10,7 @@ namespace DeveloperPlatformView.Controllers
 {
     public class JobOfferController : Controller
     {
-       // private List<JobOfferContainer> jobOffers;
+        // private List<JobOfferContainer> jobOffers;
 
         public IActionResult Index()
         {
@@ -52,10 +52,28 @@ namespace DeveloperPlatformView.Controllers
             return View(viewModel);
         }
 
+        [HttpGet]
         public IActionResult CreateJobOffer()
         {
             return View();
-        }   
+        }
+
+        [HttpPost]
+        public ActionResult CreateJobOffer(JobOfferModel jobOfferModel)
+        {
+
+            if (ModelState.IsValid == false)
+            {
+                return View(jobOfferModel);
+            }
+            else
+            {
+                JobOfferItem jobOffer = new JobOfferItem();
+                jobOffer.CreateJobOffer(jobOfferModel.Name, jobOfferModel.Description, 1, 1,1, "fulltime");
+
+                return RedirectToAction("Index");
+            }
+        }
 
     }
 }

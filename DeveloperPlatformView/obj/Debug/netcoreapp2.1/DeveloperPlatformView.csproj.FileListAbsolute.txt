@@ -191,3 +191,4 @@ C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debu
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.dll
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.pdb
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\CreateJobOffer.g.cshtml.cs
+C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\CreateJobOffer.g.cshtml.cs
