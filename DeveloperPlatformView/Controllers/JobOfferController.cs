@@ -78,7 +78,29 @@ namespace DeveloperPlatformView.Controllers
         [HttpGet]
         public IActionResult UpdateJobOffer(int id)
         {
-            return View();
+            JobOfferItem jobOffer = new JobOfferItem();
+
+            jobOffer = jobOffer.GetJobOffer(id);
+
+            JobOfferModel viewModel = new JobOfferModel()
+            {
+                JobOfferId = jobOffer.IdJoboffer,
+                Name = jobOffer.Name,
+                Description = jobOffer.Description,
+                JobType = jobOffer.JobType
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateJobOffer(JobOfferModel jobOfferModel)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(jobOfferModel);
+            }
+            return RedirectToAction("Index");
         }
     }
 }
