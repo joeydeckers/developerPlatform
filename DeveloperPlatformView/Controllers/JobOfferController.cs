@@ -75,5 +75,10 @@ namespace DeveloperPlatformView.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult UpdateJobOffer(int id)
+        {
+            return View();
+        }
     }
 }
