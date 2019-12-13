@@ -17,6 +17,7 @@ namespace JobOffer.Business
         public int ApplicationId { get; internal set; }
         public string JobType { get; internal set; }
 
+        JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
 
         //public JobOfferItem(int idJoboffer, string name, string description, int companyId, int catId, int applicationId, string jobType)
         //{
@@ -51,8 +52,17 @@ namespace JobOffer.Business
 
         public void CreateJobOffer(string name, string description, int companyid, int catId, int applicationId, string jobType)
         {
-            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
             handler.AddJobOffer(name, description, companyid, catId, applicationId, jobType);
+        }
+
+        public void UpdateJobOffer(string name, string description, int companyid, int catId, int applicationId, string jobType)
+        {
+            handler.UpdateJobOffer(name, description, companyid, catId, applicationId, jobType);
+        }
+
+        public void DeleteJobOffer(int companyId, int jobOfferId)
+        {
+            handler.DeleteJobOffer(companyId, jobOfferId);
         }
     }
 }

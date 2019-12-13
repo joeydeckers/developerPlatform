@@ -100,7 +100,29 @@ namespace DeveloperPlatformView.Controllers
             {
                 return View(jobOfferModel);
             }
-            return RedirectToAction("Index");
+            else
+            {
+                JobOfferItem jobOffer = new JobOfferItem();
+                jobOffer.CreateJobOffer(jobOfferModel.Name, jobOfferModel.Description, 1, 1, 1, "fulltime");
+
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult DeleteJobOffer(JobOfferModel jobOfferModel)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(jobOfferModel);
+            }
+            else
+            {
+                JobOfferItem jobOffer = new JobOfferItem();
+                jobOffer.CreateJobOffer(jobOfferModel.Name, jobOfferModel.Description, 1, 1, 1, "fulltime");
+
+                return RedirectToAction("Index");
+            }
         }
     }
 }

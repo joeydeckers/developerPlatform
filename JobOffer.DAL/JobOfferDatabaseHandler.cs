@@ -99,6 +99,38 @@ namespace JobOffer.DAL
 
             cmd.ExecuteReader();
         }
+
+        public void UpdateJobOffer(string name, string description, int companyId, int catId, int applicationId, string jobType)
+        {
+            string query = "UPDATE JobOffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType) WHERE companyId = "+ companyId;
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Name", name);
+            cmd.Parameters.AddWithValue("@Description", description);
+            cmd.Parameters.AddWithValue("@CompanyId", companyId);
+            cmd.Parameters.AddWithValue("@CatId", catId);
+            cmd.Parameters.AddWithValue("@ApplicationId", applicationId);
+            cmd.Parameters.AddWithValue("@JobType", jobType);
+
+            cmd.ExecuteReader();
+        }
+
+
+        public void DeleteJobOffer(int companyId, int jobOfferId)
+        {
+            string query = "DELETE from JobOffer WHERE companyId = " + companyId + "AND idJoboffer = " + jobOfferId;
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+
+            cmd.ExecuteReader();
+        }
     }
 
 }
