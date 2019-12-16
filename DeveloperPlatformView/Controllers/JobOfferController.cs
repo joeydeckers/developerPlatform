@@ -119,7 +119,7 @@ namespace DeveloperPlatformView.Controllers
 
             JobOfferModel viewModel = new JobOfferModel()
             {
-                JobOfferId = jobOffer.IdJoboffer,
+                JobOfferId = id,
                 Name = jobOffer.Name,
                 CompanyId = jobOffer.CompanyId,
                 Description = jobOffer.Description,
@@ -139,7 +139,7 @@ namespace DeveloperPlatformView.Controllers
             }
 
             JobOfferItem jobOffer = new JobOfferItem();
-            jobOffer.DeleteJobOffer(1, jobOffer.IdJoboffer);
+            jobOffer.DeleteJobOffer(1, jobOfferModel.JobOfferId);
             //hardcoded werkt delete wel
             //jobOffer.DeleteJobOffer(1, 3008);
 

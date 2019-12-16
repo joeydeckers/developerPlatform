@@ -195,3 +195,4 @@ C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcore
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\UpdateJobOffer.g.cshtml.cs
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\UpdateJobOffer.g.cshtml.cs
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\DeleteJobOffer.g.cshtml.cs
+C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\DeleteJobOffer.g.cshtml.cs
