@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Developer platform | vacatures";
+}
+
+
+@model DeveloperPlatformView.Models.JobOfferModel
+
+
+
+<h2>
+    Bewerk @Model.Name
+</h2>
+
+
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            @Html.ValidationMessageFor(m => Model.Name)
+            <p>Vacature naam: @Html.TextBoxFor(m => Model.Name, new { Class = "form-control" })</p>
+            @Html.ValidationMessageFor(m => Model.Description)
+            <p>Vacature beschrijving: @Html.TextAreaFor(m => Model.Description, new { Class = "form-control" })</p>
+            @Html.ValidationMessageFor(m => Model.JobType)
+            <p>Beschikbaarheid: @Html.TextBoxFor(m => Model.JobType, new { Class = "form-control" })</p>
+            <input class="btn btn-danger" type="submit" value="Verwijder vacature" />
+
+        }
+
+
+
+    </div>
+</div>
+
+

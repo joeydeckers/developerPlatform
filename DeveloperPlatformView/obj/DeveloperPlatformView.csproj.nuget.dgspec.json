@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj": {}
+    "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj": {
+    "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
+        "projectUniqueName": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
         "projectName": "DeveloperPlatformView",
-        "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
-        "packagesPath": "C:\\Users\\JoeyD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\obj\\",
+        "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
+        "packagesPath": "C:\\Users\\Joey Deckers\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\JoeyD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Joey Deckers\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
-                "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj"
+              "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
+                "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj"
               }
             }
           }
@@ -74,17 +74,17 @@
         }
       }
     },
-    "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Interfaces\\Interfaces.csproj": {
+    "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Interfaces\\Interfaces.csproj",
+        "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Interfaces\\Interfaces.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj": {
-                "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj"
+              "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj": {
+                "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj"
               }
             }
           }
@@ -94,31 +94,31 @@
         "net472": {}
       }
     },
-    "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj": {
+    "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj",
         "projectName": "JobOffer.DAL",
-        "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj"
+        "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
+    "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj",
         "projectName": "JobOffer.Business",
-        "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj",
+        "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Interfaces\\Interfaces.csproj"
+              "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Interfaces\\Interfaces.csproj"
               },
-              "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj": {
-                "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj"
+              "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj": {
+                "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.DAL\\JobOffer.DAL.csproj"
               }
             }
           }

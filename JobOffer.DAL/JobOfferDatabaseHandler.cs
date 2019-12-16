@@ -11,8 +11,8 @@ namespace JobOffer.DAL
     {
 
         // dit moet op een andere manier want nu moet ik altijd het pad aanpassen
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
-        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
 
         public List<JobOfferDto> GetJoboffers() {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
@@ -121,13 +121,15 @@ namespace JobOffer.DAL
 
         public void DeleteJobOffer(int companyId, int jobOfferId)
         {
-            string query = "DELETE from JobOffer WHERE companyId = " + companyId + "AND idJoboffer = " + jobOfferId;
+            //string query = "DELETE FROM JobOffers WHERE companyId =  @CompanyId AND idJoboffer = @JobOfferId";
+            string query = "DELETE FROM JobOffers WHERE companyId = "+companyId + "AND idJoboffer = "+ jobOfferId;
 
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-
+    
             SqlCommand cmd = new SqlCommand(query, conn);
-
+            cmd.Parameters.AddWithValue("@CompanyId", companyId);
+            cmd.Parameters.AddWithValue("@JobOfferId", jobOfferId);
 
             cmd.ExecuteReader();
         }

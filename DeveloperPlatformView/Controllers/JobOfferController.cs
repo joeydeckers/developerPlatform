@@ -85,6 +85,7 @@ namespace DeveloperPlatformView.Controllers
             JobOfferModel viewModel = new JobOfferModel()
             {
                 JobOfferId = jobOffer.IdJoboffer,
+                CompanyId = jobOffer.CompanyId,
                 Name = jobOffer.Name,
                 Description = jobOffer.Description,
                 JobType = jobOffer.JobType
@@ -109,20 +110,41 @@ namespace DeveloperPlatformView.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult DeleteJobOffer(int id)
+        {
+            JobOfferItem jobOffer = new JobOfferItem();
+
+            jobOffer = jobOffer.GetJobOffer(id);
+
+            JobOfferModel viewModel = new JobOfferModel()
+            {
+                JobOfferId = jobOffer.IdJoboffer,
+                Name = jobOffer.Name,
+                CompanyId = jobOffer.CompanyId,
+                Description = jobOffer.Description,
+                JobType = jobOffer.JobType
+            };
+
+            return View(viewModel);
+        }
+
         [HttpPost]
         public ActionResult DeleteJobOffer(JobOfferModel jobOfferModel)
         {
+
             if (ModelState.IsValid == false)
             {
                 return View(jobOfferModel);
             }
-            else
-            {
-                JobOfferItem jobOffer = new JobOfferItem();
-                jobOffer.CreateJobOffer(jobOfferModel.Name, jobOfferModel.Description, 1, 1, 1, "fulltime");
 
-                return RedirectToAction("Index");
-            }
+            JobOfferItem jobOffer = new JobOfferItem();
+            jobOffer.DeleteJobOffer(1, jobOffer.IdJoboffer);
+            //hardcoded werkt delete wel
+            //jobOffer.DeleteJobOffer(1, 3008);
+
+            return RedirectToAction("Index");
+           
         }
     }
 }

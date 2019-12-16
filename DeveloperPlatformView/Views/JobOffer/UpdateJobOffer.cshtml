@@ -24,8 +24,13 @@
             @Html.ValidationMessageFor(m => Model.JobType)
             <p>Beschikbaarheid: @Html.TextBoxFor(m => Model.JobType, new { Class = "form-control" })</p>
             <input class="btn btn-success" type="submit" value="Bewerk vacature" />
+
         }
 
+        @using (Html.BeginForm("DeleteJobOffer", "JobOffer", FormMethod.Post))
+        {
+            <input class="btn btn-danger" type="submit" value="Verwijder vacature" />
+        }
 
 
 
