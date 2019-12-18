@@ -12,11 +12,11 @@ namespace JobOffer.DAL
     {
 
         // dit moet op een andere manier want nu moet ik altijd het pad aanpassen
-        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
 
-        public List<JobOfferDtoItem> GetJoboffers() {
-            List<JobOfferDtoItem> allJobOffers = new List<JobOfferDtoItem>();
+        public List<JobOfferDto> GetJoboffers() {
+            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString)) {
@@ -27,7 +27,7 @@ namespace JobOffer.DAL
                         SqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
-                            JobOfferDtoItem dto = new JobOfferDtoItem();
+                            JobOfferDto dto = new JobOfferDto();
                             dto.IdJoboffer = reader.GetInt32(0);
                             dto.Name = reader.GetString(1);
                             dto.Description = reader.GetString(2);

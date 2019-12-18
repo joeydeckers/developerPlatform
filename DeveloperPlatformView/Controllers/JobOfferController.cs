@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using DeveloperPlatformView.Models;
 //using System.Web;
 using JobOffer.Business;
+using Models;
 namespace DeveloperPlatformView.Controllers
 {
     public class JobOfferController : Controller
@@ -14,11 +15,13 @@ namespace DeveloperPlatformView.Controllers
 
         public IActionResult Index()
         {
-            List<JobOfferItem> allJobOffers = new List<JobOfferItem>();
+            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
 
             List<JobOfferModel> allJobOfferModels = new List<JobOfferModel>();
 
-            allJobOffers = JobOfferContainer.GetAllJobOffers();
+            JobOfferContainerData jobOffers = new JobOfferContainerData();
+
+            allJobOffers = jobOffers.GetAllJobOffers();
 
 
             foreach (var jobOffer in allJobOffers)
@@ -39,14 +42,18 @@ namespace DeveloperPlatformView.Controllers
 
             JobOfferItem jobOffer = new JobOfferItem();
 
-            jobOffer = jobOffer.GetJobOffer(id);
+            JobOfferDto jobOfferDto = new JobOfferDto();
+
+            jobOfferDto = jobOffer.GetJobOffer(id);
+
+            //jobOfferDto.ApplicationId = jobOffer.ApplicationId;
 
             JobOfferModel viewModel = new JobOfferModel()
             {
-                JobOfferId = jobOffer.IdJoboffer,
-                Name = jobOffer.Name,
-                Description = jobOffer.Description,
-                JobType = jobOffer.JobType
+                JobOfferId = jobOfferDto.IdJoboffer,
+                Name = jobOfferDto.Name,
+                Description = jobOfferDto.Description,
+                JobType = jobOfferDto.JobType
             };
 
             return View(viewModel);
@@ -78,17 +85,25 @@ namespace DeveloperPlatformView.Controllers
         [HttpGet]
         public IActionResult UpdateJobOffer(int id)
         {
+            //JobOfferItem jobOffer = new JobOfferItem();
+
+            //jobOffer = jobOffer.GetJobOffer(id);
+
             JobOfferItem jobOffer = new JobOfferItem();
 
-            jobOffer = jobOffer.GetJobOffer(id);
+            JobOfferDto jobOfferDto = new JobOfferDto();
+
+            jobOfferDto = jobOffer.GetJobOffer(id);
+
+            //jobOfferDto.ApplicationId = jobOffer.ApplicationId;
 
             JobOfferModel viewModel = new JobOfferModel()
             {
-                JobOfferId = jobOffer.IdJoboffer,
-                CompanyId = jobOffer.CompanyId,
-                Name = jobOffer.Name,
-                Description = jobOffer.Description,
-                JobType = jobOffer.JobType
+                JobOfferId = jobOfferDto.IdJoboffer,
+                CompanyId = jobOfferDto.CompanyId,
+                Name = jobOfferDto.Name,
+                Description = jobOfferDto.Description,
+                JobType = jobOfferDto.JobType
             };
 
             return View(viewModel);

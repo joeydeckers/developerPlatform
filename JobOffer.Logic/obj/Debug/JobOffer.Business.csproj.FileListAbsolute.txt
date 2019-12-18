@@ -64,3 +64,5 @@ C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\JobOf
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.pdb
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Models.dll
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Models.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Models.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Models.pdb

@@ -9,19 +9,19 @@ using Models;
 
 namespace JobOffer.Business
 {
-    public class JobOfferContainer
+
+    public class JobOfferContainerData : IJobOfferContainerData
     {
-        public static List<JobOfferItem> GetAllJobOffers()
+        public List<JobOfferDto> GetAllJobOffers()
         {
-            List<JobOfferItem> allJobOffers = new List<JobOfferItem>();
+            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
             JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
 
             var jobOffersFromDatabse = handler.GetJoboffers();
 
-            foreach (var jobOfferDto in jobOffersFromDatabse)
+            foreach (JobOfferDto jobOfferDto in jobOffersFromDatabse)
             {
-                //JobOfferItem jobOffer = new JobOfferItem(jobOfferDto.IdJoboffer, jobOfferDto.Name, jobOfferDto.Description, jobOfferDto.CompanyId, jobOfferDto.CatId, jobOfferDto.ApplicationId, jobOfferDto.JobType);
-                JobOfferItem jobOffer = new JobOfferItem();
+                JobOfferDto jobOffer = new JobOfferDto();
                 jobOffer.IdJoboffer = jobOfferDto.IdJoboffer;
                 jobOffer.Name = jobOfferDto.Name;
                 jobOffer.Description = jobOfferDto.Description;
@@ -33,9 +33,9 @@ namespace JobOffer.Business
 
                 allJobOffers.Add(jobOffer);
             }
-           handler.AddJobOffer("GoLang Developer Gezocht", "test", 1, 1, 1, "Fulltime");
             return allJobOffers;
         }
+
 
     }
 }

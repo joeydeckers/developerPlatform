@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="JobOfferItem.cs" />
-    <Compile Include="JobOfferContainer.cs" />
+    <Compile Include="JobOfferContainerData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

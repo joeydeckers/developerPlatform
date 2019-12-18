@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using JobOffer.DAL;
+using Models;
 
 namespace Interfaces
 {
     public interface IJobOfferContainerData
     {
-         JobOfferDto GetAllJobOffers();
+       List<JobOfferDto> GetAllJobOffers();
     }
 }

@@ -198,3 +198,5 @@ C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debu
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\JobOffer\DeleteJobOffer.g.cshtml.cs
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\Models.dll
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\Models.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\Models.dll
+C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\Models.pdb

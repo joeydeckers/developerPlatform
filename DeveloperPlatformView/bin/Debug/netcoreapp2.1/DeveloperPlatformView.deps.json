@@ -28,7 +28,8 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
+          "Models": "1.0.0"
         },
         "runtime": {
           "DeveloperPlatformView.dll": {}
@@ -517,7 +518,8 @@
       },
       "Interfaces/1.0.0": {
         "dependencies": {
-          "JobOffer.DAL": "1.0.0"
+          "JobOffer.DAL": "1.0.0",
+          "Models": "1.0.0"
         },
         "runtime": {
           "Interfaces.dll": {}
