@@ -110,36 +110,33 @@ namespace DeveloperPlatformView.Controllers
             }
         }
 
+        //[HttpGet]
+        //public IActionResult DeleteJobOffer(int id)
+        //{
+        //    JobOfferItem jobOffer = new JobOfferItem();
+
+        //    jobOffer = jobOffer.GetJobOffer(id);
+
+        //    JobOfferModel viewModel = new JobOfferModel()
+        //    {
+        //        JobOfferId = jobOffer.IdJoboffer,
+        //        Name = jobOffer.Name,
+        //        CompanyId = jobOffer.CompanyId,
+        //        Description = jobOffer.Description,
+        //        JobType = jobOffer.JobType
+        //    };
+
+        //    return View(viewModel);
+        //}
+
         [HttpGet]
-        public IActionResult DeleteJobOffer(int id)
-        {
-            JobOfferItem jobOffer = new JobOfferItem();
-
-            jobOffer = jobOffer.GetJobOffer(id);
-
-            JobOfferModel viewModel = new JobOfferModel()
-            {
-                JobOfferId = id,
-                Name = jobOffer.Name,
-                CompanyId = jobOffer.CompanyId,
-                Description = jobOffer.Description,
-                JobType = jobOffer.JobType
-            };
-
-            return View(viewModel);
-        }
-
-        [HttpPost]
-        public ActionResult DeleteJobOffer(JobOfferModel jobOfferModel)
+        public ActionResult DeleteJobOffer(int id)
         {
 
-            if (ModelState.IsValid == false)
-            {
-                return View(jobOfferModel);
-            }
 
             JobOfferItem jobOffer = new JobOfferItem();
-            jobOffer.DeleteJobOffer(1, jobOfferModel.JobOfferId);
+            
+            jobOffer.DeleteJobOffer(1, id);
             //hardcoded werkt delete wel
             //jobOffer.DeleteJobOffer(1, 3008);
 
