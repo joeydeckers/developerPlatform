@@ -54,3 +54,5 @@ C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interface
 C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
 C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Models.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Models.pdb

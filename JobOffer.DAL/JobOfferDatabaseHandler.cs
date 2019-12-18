@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Models;
 
 namespace JobOffer.DAL
 {
@@ -14,8 +15,8 @@ namespace JobOffer.DAL
         //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
         private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
 
-        public List<JobOfferDto> GetJoboffers() {
-            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
+        public List<JobOfferDtoItem> GetJoboffers() {
+            List<JobOfferDtoItem> allJobOffers = new List<JobOfferDtoItem>();
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString)) {
@@ -26,7 +27,7 @@ namespace JobOffer.DAL
                         SqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
-                            JobOfferDto dto = new JobOfferDto();
+                            JobOfferDtoItem dto = new JobOfferDtoItem();
                             dto.IdJoboffer = reader.GetInt32(0);
                             dto.Name = reader.GetString(1);
                             dto.Description = reader.GetString(2);

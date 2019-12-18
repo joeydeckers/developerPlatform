@@ -60,7 +60,7 @@ using DeveloperPlatformView.Models;
             WriteLiteral("\n\n<div class=\"row\">\n    <div class=\"col-md-4 mx-auto\">\n        <h2>Inloggen</h2>\n        ");
             EndContext();
             BeginContext(161, 261, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "190adbd8af3440eca064f1082da9ab3b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "809b1389a3ca4037851a93f74301bf91", async() => {
                 BeginContext(167, 248, true);
                 WriteLiteral("\n            <input placeholder=\"Email\" class=\"form-control register-input\" />\n            <input placeholder=\"Wachtwoord\" type=\"password\" class=\"form-control register-input\" />\n            <button class=\"btn btn-success\">Inloggen</button>\n        ");
                 EndContext();

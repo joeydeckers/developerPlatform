@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using JobOffer.DAL;
 using Interfaces;
+using Models;
 
 namespace JobOffer.Business
 {

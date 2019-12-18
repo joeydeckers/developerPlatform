@@ -4632,7 +4632,8 @@
         "type": "project",
         "dependencies": {
           "Interfaces": "1.0.0",
-          "JobOffer.DAL": "1.0.0"
+          "JobOffer.DAL": "1.0.0",
+          "Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/JobOffer.Business.dll": {}
@@ -4643,11 +4644,23 @@
       },
       "JobOffer.DAL/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/JobOffer.DAL.dll": {}
         },
         "runtime": {
           "bin/placeholder/JobOffer.DAL.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
         }
       }
     }
@@ -12576,6 +12589,11 @@
       "type": "project",
       "path": "../JobOffer.DAL/JobOffer.DAL.csproj",
       "msbuildProject": "../JobOffer.DAL/JobOffer.DAL.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {

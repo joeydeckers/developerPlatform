@@ -529,7 +529,8 @@
       "JobOffer.Business/1.0.0": {
         "dependencies": {
           "Interfaces": "1.0.0",
-          "JobOffer.DAL": "1.0.0"
+          "JobOffer.DAL": "1.0.0",
+          "Models": "1.0.0"
         },
         "runtime": {
           "JobOfferLogic.dll": {}
@@ -539,11 +540,22 @@
         }
       },
       "JobOffer.DAL/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "runtime": {
           "JobOffer.DAL.dll": {}
         },
         "compile": {
           "JobOffer.DAL.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
+        },
+        "compile": {
+          "Models.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3687,6 +3699,11 @@
       "sha512": ""
     },
     "JobOffer.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
