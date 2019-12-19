@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "DeveloperPlatformView/1.0.0": {
         "dependencies": {
-          "JobOffer.Business": "1.0.0",
+          "Business": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -516,9 +516,33 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "Business/1.0.0": {
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Interfaces": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "JobOfferLogic.dll": {}
+        },
+        "compile": {
+          "JobOfferLogic.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "runtime": {
+          "JobOffer.DAL.dll": {}
+        },
+        "compile": {
+          "JobOffer.DAL.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "dependencies": {
-          "JobOffer.DAL": "1.0.0",
+          "DAL": "1.0.0",
           "Models": "1.0.0"
         },
         "runtime": {
@@ -526,30 +550,6 @@
         },
         "compile": {
           "Interfaces.dll": {}
-        }
-      },
-      "JobOffer.Business/1.0.0": {
-        "dependencies": {
-          "Interfaces": "1.0.0",
-          "JobOffer.DAL": "1.0.0",
-          "Models": "1.0.0"
-        },
-        "runtime": {
-          "JobOfferLogic.dll": {}
-        },
-        "compile": {
-          "JobOfferLogic.dll": {}
-        }
-      },
-      "JobOffer.DAL/1.0.0": {
-        "dependencies": {
-          "Models": "1.0.0"
-        },
-        "runtime": {
-          "JobOffer.DAL.dll": {}
-        },
-        "compile": {
-          "JobOffer.DAL.dll": {}
         }
       },
       "Models/1.0.0": {
@@ -3690,17 +3690,17 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Interfaces/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "JobOffer.Business/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "JobOffer.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

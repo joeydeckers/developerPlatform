@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JobOffer.Logic\JobOffer.Business.csproj">
+    <ProjectReference Include="..\JobOffer.Logic\Business.csproj">
       <Project>{681c951c-c95c-4045-9300-4009ece46e38}</Project>
-      <Name>JobOffer.Business</Name>
+      <Name>Business</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

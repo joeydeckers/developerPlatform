@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DeveloperPlatformView.Models;
 //using System.Web;
-using JobOffer.Business;
+using Business;
 using Models;
 namespace DeveloperPlatformView.Controllers
 {

@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperPlatformView", "DeveloperPlatformView.csproj", "{4D39CD28-9785-4F2F-99B4-E80C28791212}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobOffer.DAL", "..\JobOffer.DAL\JobOffer.DAL.csproj", "{722D45D1-D24B-471B-B21F-4F7549089130}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\JobOffer.DAL\DAL.csproj", "{722D45D1-D24B-471B-B21F-4F7549089130}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobOfferTest.View", "..\JobOfferTest.View\JobOfferTest.View.csproj", "{56B5E7EC-0192-4D72-9D2D-A7E5F2F77350}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobOffer.Business", "..\JobOffer.Logic\JobOffer.Business.csproj", "{681C951C-C95C-4045-9300-4009ECE46E38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "..\JobOffer.Logic\Business.csproj", "{681C951C-C95C-4045-9300-4009ECE46E38}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{461C8895-E0FB-4BD0-B2B2-2EE208A6F0AF}"
 EndProject

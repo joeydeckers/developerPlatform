@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using JobOffer.DAL;
+using DAL;
 using Models;
 using Interfaces;
 
-namespace JobOffer.Business
+namespace Business
 {
     public class JobOfferItem : IJobOfferItem
     {

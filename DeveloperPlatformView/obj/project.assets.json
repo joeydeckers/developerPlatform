@@ -4616,10 +4616,36 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Business/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Interfaces": "1.0.0",
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
       "Interfaces/1.0.0": {
         "type": "project",
         "dependencies": {
-          "JobOffer.DAL": "1.0.0",
+          "DAL": "1.0.0",
           "Models": "1.0.0"
         },
         "compile": {
@@ -4627,32 +4653,6 @@
         },
         "runtime": {
           "bin/placeholder/Interfaces.dll": {}
-        }
-      },
-      "JobOffer.Business/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Interfaces": "1.0.0",
-          "JobOffer.DAL": "1.0.0",
-          "Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/JobOffer.Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/JobOffer.Business.dll": {}
-        }
-      },
-      "JobOffer.DAL/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/JobOffer.DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/JobOffer.DAL.dll": {}
         }
       },
       "Models/1.0.0": {
@@ -12576,20 +12576,20 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../JobOffer.Logic/Business.csproj",
+      "msbuildProject": "../JobOffer.Logic/Business.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../JobOffer.DAL/DAL.csproj",
+      "msbuildProject": "../JobOffer.DAL/DAL.csproj"
+    },
     "Interfaces/1.0.0": {
       "type": "project",
       "path": "../Interfaces/Interfaces.csproj",
       "msbuildProject": "../Interfaces/Interfaces.csproj"
-    },
-    "JobOffer.Business/1.0.0": {
-      "type": "project",
-      "path": "../JobOffer.Logic/JobOffer.Business.csproj",
-      "msbuildProject": "../JobOffer.Logic/JobOffer.Business.csproj"
-    },
-    "JobOffer.DAL/1.0.0": {
-      "type": "project",
-      "path": "../JobOffer.DAL/JobOffer.DAL.csproj",
-      "msbuildProject": "../JobOffer.DAL/JobOffer.DAL.csproj"
     },
     "Models/1.0.0": {
       "type": "project",
@@ -12599,7 +12599,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "JobOffer.Business >= 1.0.0",
+      "Business >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12637,8 +12637,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj": {
-              "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\JobOffer.Business.csproj"
+            "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\Business.csproj": {
+              "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\Business.csproj"
             },
             "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Models\\Models.csproj"

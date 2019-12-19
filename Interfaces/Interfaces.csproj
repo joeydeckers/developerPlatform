@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JobOffer.DAL\JobOffer.DAL.csproj">
+    <ProjectReference Include="..\JobOffer.DAL\DAL.csproj">
       <Project>{722d45d1-d24b-471b-b21f-4f7549089130}</Project>
-      <Name>JobOffer.DAL</Name>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{e4e08343-2b31-400c-bd86-22b74746f408}</Project>

@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Models;
 
-namespace JobOffer.DAL
+namespace DAL
 {
-    public class JobOfferDatabaseHandler
+    public class JobOfferDatabaseHandler: DataHandler
     {
 
         // dit moet op een andere manier want nu moet ik altijd het pad aanpassen
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
         //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
 
         public List<JobOfferDto> GetJoboffers() {
