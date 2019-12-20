@@ -39,9 +39,25 @@ namespace DeveloperPlatformView.Controllers
 
         }
 
-      [HttpGet]
-        public IActionResult ShowApplication() {
-            return View();
+        [HttpGet]
+        public IActionResult ShowApplication(int id) {
+
+            ApplicationItem applcation = new ApplicationItem();
+
+            ApplicationDto applicationDto = new ApplicationDto();
+
+            applicationDto = applcation.GetApplication(id);
+
+
+            ApplicationModel viewModel = new ApplicationModel()
+            {
+                IdApplication = applicationDto.JobofferId,
+                UserId = applicationDto.UserId,
+                JobofferId = applicationDto.JobofferId,
+                ApplicationText = applicationDto.ApplicationText
+            };
+
+            return View(viewModel);
         }
     }
 }

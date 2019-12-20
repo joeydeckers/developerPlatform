@@ -10,11 +10,6 @@ namespace DAL
 {
     public class JobOfferDatabaseHandler: DataHandler
     {
-
-        // dit moet op een andere manier want nu moet ik altijd het pad aanpassen
-        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
-        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
-
         public List<JobOfferDto> GetJoboffers() {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
             try

@@ -10,38 +10,22 @@ namespace Business
 {
     public class ApplicationItem
     {
+        ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler();
 
-        //JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
+        public ApplicationDto GetApplication(int id)
+        {
 
+            ApplicationDto applicationDto = handler.GetApplication(id);
 
+            ApplicationDto application = new ApplicationDto();
 
-        //public JobOfferDto GetJobOffer(int id)
-        //{
-        //    JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
+            application.IdApplication = applicationDto.IdApplication;
+            application.UserId = applicationDto.UserId;
+            application.JobofferId = applicationDto.JobofferId;
+            application.ApplicationText = applicationDto.ApplicationText;
 
-        //    JobOfferDto jobOfferDto = handler.GetJoboffer(id);
-
-        //    JobOfferDto jobOffer = new JobOfferDto();
-
-        //    jobOffer.IdJoboffer = jobOfferDto.IdJoboffer;
-        //    jobOffer.Name = jobOfferDto.Name;
-        //    jobOffer.Description = jobOfferDto.Description;
-        //    jobOffer.CompanyId = jobOfferDto.CompanyId;
-        //    jobOffer.CatId = jobOfferDto.CatId;
-        //    jobOffer.ApplicationId = jobOfferDto.ApplicationId;
-        //    jobOffer.JobType = jobOfferDto.JobType;
-
-        //    return jobOffer;
-        //}
-        //public void CreateJobOffer(string name, string description, int companyid, int catId, int applicationId, string jobType)
-        //{
-        //    handler.AddJobOffer(name, description, companyid, catId, applicationId, jobType);
-        //}
-
-        //public void UpdateJobOffer(string name, string description, int companyid, int catId, int applicationId, string jobType)
-        //{
-        //    handler.UpdateJobOffer(name, description, companyid, catId, applicationId, jobType);
-        //}
+            return application;
+        }
 
         //public void DeleteJobOffer(int companyId, int jobOfferId)
         //{

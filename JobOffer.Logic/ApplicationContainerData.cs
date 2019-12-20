@@ -9,7 +9,7 @@ using Interfaces;
 
 namespace Business
 {
-    public class ApplicationContainerData
+    public class ApplicationContainerData: IApplicationContainerData
     {
         public List<ApplicationDto> GetAllApplications()
         {
