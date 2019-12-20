@@ -73,5 +73,19 @@ namespace DAL
             }
             return dto;
         }
+
+        public void CreateApplication(int userId, int jobOfferId, string applicationText)
+        {
+            string query = "insert into Applications(userId, jobOfferId, applicationText) values( @UserId, @JobOfferId, @ApplicationText)";
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@UserId", userId);
+            cmd.Parameters.AddWithValue("@JobOfferId", jobOfferId);
+            cmd.Parameters.AddWithValue("@ApplicationText", applicationText);
+            cmd.ExecuteReader();
+        }
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="ApplicationItem.cs" />
     <Compile Include="JobOfferItem.cs" />
     <Compile Include="JobOfferContainerData.cs" />
+    <Compile Include="JobSeeker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "CreateApplication";
+}
+
+@model DeveloperPlatformView.Models.ApplicationModel
+
+
+<h2>Solliciteer</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <p>Vacature beschrijving: @Html.TextAreaFor(m => Model.ApplicationText, new { Class = "form-control" })</p>
+    <input class="btn btn-success" type="submit" value="Solliciteer" />
+}

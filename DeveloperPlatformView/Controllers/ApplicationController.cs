@@ -27,7 +27,7 @@ namespace DeveloperPlatformView.Controllers
             {
                 ApplicationModel viewModel = new ApplicationModel()
                 {
-                    IdApplication = application.JobofferId,
+                    IdApplication = application.IdApplication,
                     UserId = application.UserId,
                     JobofferId = application.JobofferId,
                     ApplicationText = application.ApplicationText
@@ -58,6 +58,44 @@ namespace DeveloperPlatformView.Controllers
             };
 
             return View(viewModel);
+        }
+
+        [HttpGet]
+        public IActionResult CreateApplication(int id)
+        {
+            ApplicationItem applcation = new ApplicationItem();
+
+            ApplicationDto applicationDto = new ApplicationDto();
+
+            applicationDto = applcation.GetApplication(id);
+
+
+            ApplicationModel viewModel = new ApplicationModel()
+            {
+                IdApplication = applicationDto.JobofferId,
+                UserId = applicationDto.UserId,
+                JobofferId = applicationDto.JobofferId,
+                ApplicationText = applicationDto.ApplicationText
+            };
+
+            return View(viewModel);
+
+        }
+
+
+        [HttpPost]
+        public ActionResult CreateApplication(ApplicationModel applicationModel)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(applicationModel);
+            }
+
+            JobSeeker jobSeeker = new JobSeeker();
+            jobSeeker.CreateJobOffer(1, applicationModel.JobofferId, applicationModel.ApplicationText);
+
+            return RedirectToAction("Index");
+
         }
     }
 }

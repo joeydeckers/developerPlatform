@@ -202,3 +202,4 @@ C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcore
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\Models.pdb
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\Application\Index.g.cshtml.cs
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\Application\ShowApplication.g.cshtml.cs
+C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\Application\CreateApplication.g.cshtml.cs

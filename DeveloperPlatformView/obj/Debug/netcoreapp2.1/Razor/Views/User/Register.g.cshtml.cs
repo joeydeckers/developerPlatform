@@ -60,7 +60,7 @@ using DeveloperPlatformView.Models;
             WriteLiteral("\n\n<div class=\"row\">\n    <div class=\"col-md-4 mx-auto\">\n        <h2>Registreren</h2>\n        ");
             EndContext();
             BeginContext(157, 726, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b22f18e40b1b4735bb4a0a21d54df6a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f7d0ffeaae33477bb2480d965768090c", async() => {
                 BeginContext(163, 713, true);
                 WriteLiteral(@"
             <input placeholder=""Naam"" class=""form-control register-input"" />

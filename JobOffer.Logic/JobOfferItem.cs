@@ -11,35 +11,8 @@ namespace Business
 {
     public class JobOfferItem : IJobOfferItem
     {
-        //public int IdJoboffer { get; internal set; }
-        //public string Name { get; internal set; }
-        //public string Description { get; internal set; }
-        //public int CompanyId { get; internal set; }
-        //public int CatId { get; internal set; }
-        //public int ApplicationId { get; internal set; }
-        //public string JobType { get; internal set; }
 
         JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
-
-        //public JobOfferItem GetJobOffer(int id)
-        //{
-        //    JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
-
-        //    JobOfferDto jobOfferDto = handler.GetJoboffer(id);
-
-        //    // JobOfferItem jobOffer = new JobOfferItem(jobOfferDto.IdJoboffer, jobOfferDto.Name, jobOfferDto.Description, jobOfferDto.CompanyId, jobOfferDto.CatId, jobOfferDto.ApplicationId, jobOfferDto.JobType);
-
-        //    JobOfferItem jobOffer = new JobOfferItem();
-        //    jobOffer.IdJoboffer = jobOfferDto.IdJoboffer;
-        //    jobOffer.Name = jobOfferDto.Name;
-        //    jobOffer.Description = jobOfferDto.Description;
-        //    jobOffer.CompanyId = jobOfferDto.CompanyId;
-        //    jobOffer.CatId = jobOfferDto.CatId;
-        //    jobOffer.ApplicationId = jobOfferDto.ApplicationId;
-        //    jobOffer.JobType = jobOfferDto.JobType;
-
-        //    return jobOffer;
-        //}
 
         public JobOfferDto GetJobOffer(int id)
         {

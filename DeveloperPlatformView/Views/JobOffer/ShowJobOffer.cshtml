@@ -18,10 +18,7 @@
 
         <p>@Model.Description</p>
 
-        <form>
-            <textarea class="form-control"></textarea>
-            <button class="btn btn-success">Sollciteren</button>
-        </form>
+        @Html.ActionLink("Solliciteren", "CreateApplication", "Application", new { id = Model.JobOfferId })
 
     </div>
 </div>
