@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace Business
 {
-    public interface IJobSeeker
+    public class User
     {
-        void CreateJobOffer(int userId, int jobOfferId, string applicationText);
+        public string Name { get; set; }
+        public string Email { get; set; }
     }
 }

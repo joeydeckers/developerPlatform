@@ -8,7 +8,7 @@ using Interfaces;
 
 namespace Business
 {
-    public class JobSeeker: IJobSeeker
+    public class JobSeeker: User
     {
         ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler();
 
