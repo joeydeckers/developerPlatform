@@ -49,11 +49,34 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="JobofferDALTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="JobOfferBusinessTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{461c8895-e0fb-4bd0-b2b2-2ee208a6f0af}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobOffer.DAL\DAL.csproj">
+      <Project>{722d45d1-d24b-471b-b21f-4f7549089130}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobOffer.Logic\Business.csproj">
+      <Project>{681c951c-c95c-4045-9300-4009ece46e38}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobOfferTest.View\JobOfferTest.View.csproj">
+      <Project>{56b5e7ec-0192-4d72-9d2d-a7e5f2f77350}</Project>
+      <Name>JobOfferTest.View</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{e4e08343-2b31-400c-bd86-22b74746f408}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

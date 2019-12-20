@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Models;
 using DAL;
+using Interfaces;
 
 namespace Business
 {
-    public class ApplicationItem
+    public class ApplicationItem:IApplicationItem
     {
         ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler();
 

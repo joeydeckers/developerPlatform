@@ -16,7 +16,7 @@ namespace Business
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
             ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler();
 
-            var applicationsFromDatabase = handler.GetAllApplications();
+            List<ApplicationDto> applicationsFromDatabase = handler.GetAllApplications();
 
             foreach (ApplicationDto applicationDto in applicationsFromDatabase)
             {

@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IApplicationContainerData.cs" />
+    <Compile Include="IApplicationItem.cs" />
     <Compile Include="IJobOfferContainerData.cs" />
     <Compile Include="IJobOfferItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
