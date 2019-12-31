@@ -35,3 +35,24 @@ body {
         display: none;
     }
 }
+
+/*Mijn css*/
+
+#landing-section {
+    position: relative;
+    top: 80px;
+}
+
+#landing-section img {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+    height: 700px;
+}
+
+.landing-text {
+    position: relative;
+    top: 180px;
+}
