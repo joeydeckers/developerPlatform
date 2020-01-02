@@ -41,6 +41,7 @@ body {
 #landing-section {
     position: relative;
     top: 80px;
+    margin-bottom: 80px;
 }
 
 #landing-section img {
@@ -52,7 +53,32 @@ body {
     height: 700px;
 }
 
+
 .landing-text {
     position: relative;
     top: 180px;
+}
+
+.landing-text h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+.landing-text p {
+    font-size: 19px;
+    color: #888888;
+}
+
+.companies {
+    margin-top: 35px;
+    padding: 30px;
+    background: #f7f7f7;
+    overflow: auto;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.companies img {
+    height: 100px !important;
 }

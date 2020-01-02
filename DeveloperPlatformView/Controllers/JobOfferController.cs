@@ -11,8 +11,6 @@ namespace DeveloperPlatformView.Controllers
 {
     public class JobOfferController : Controller
     {
-        // private List<JobOfferContainer> jobOffers;
-
         public IActionResult Index()
         {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
@@ -45,8 +43,6 @@ namespace DeveloperPlatformView.Controllers
             JobOfferDto jobOfferDto = new JobOfferDto();
 
             jobOfferDto = jobOffer.GetJobOffer(id);
-
-            //jobOfferDto.ApplicationId = jobOffer.ApplicationId;
 
             JobOfferModel viewModel = new JobOfferModel()
             {
@@ -85,17 +81,12 @@ namespace DeveloperPlatformView.Controllers
         [HttpGet]
         public IActionResult UpdateJobOffer(int id)
         {
-            //JobOfferItem jobOffer = new JobOfferItem();
-
-            //jobOffer = jobOffer.GetJobOffer(id);
 
             JobOfferItem jobOffer = new JobOfferItem();
 
             JobOfferDto jobOfferDto = new JobOfferDto();
 
             jobOfferDto = jobOffer.GetJobOffer(id);
-
-            //jobOfferDto.ApplicationId = jobOffer.ApplicationId;
 
             JobOfferModel viewModel = new JobOfferModel()
             {
