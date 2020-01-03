@@ -6,12 +6,22 @@ using System.Threading.Tasks;
 using Models;
 using DAL;
 using Interfaces;
+using Microsoft.Extensions.Configuration;
+
 
 namespace Business
 {
     public class ApplicationItem:IApplicationItem
     {
-        ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler();
+        private IConfiguration config;
+        private ApplicationDatabaseHandler handler;
+        public ApplicationItem()
+        {
+            config = config;
+            handler = new ApplicationDatabaseHandler(config);
+
+        }
+
 
         public ApplicationDto GetApplication(int id)
         {
@@ -27,10 +37,5 @@ namespace Business
 
             return application;
         }
-
-        //public void DeleteJobOffer(int companyId, int jobOfferId)
-        //{
-        //    handler.DeleteJobOffer(companyId, jobOfferId);
-        //}
     }
 }

@@ -12,3 +12,13 @@ C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\DAL.csproj.CoreC
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.dll
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\obj\Debug\JobOffer.DAL.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Security.AccessControl.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Security.Permissions.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Security.AccessControl.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Security.Permissions.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml

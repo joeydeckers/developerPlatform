@@ -5,11 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
+using Microsoft.Extensions.Configuration;
 
 namespace DAL
 {
     public class ApplicationDatabaseHandler:DataHandler
     {
+
+        public ApplicationDatabaseHandler(IConfiguration config) : base(config)
+        {
+
+        }
         public List<ApplicationDto> GetAllApplications()
         {
             List<ApplicationDto> allApplications = new List<ApplicationDto>();

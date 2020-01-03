@@ -7,17 +7,26 @@ using DeveloperPlatformView.Models;
 //using System.Web;
 using Business;
 using Models;
+using Microsoft.Extensions.Configuration;
+
+
 namespace DeveloperPlatformView.Controllers
 {
     public class JobOfferController : Controller
     {
+        private IConfiguration config;
+
+        public JobOfferController(IConfiguration config) {
+            config = config;
+        }
+
         public IActionResult Index()
         {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
 
             List<JobOfferModel> allJobOfferModels = new List<JobOfferModel>();
 
-            JobOfferContainerData jobOffers = new JobOfferContainerData();
+            JobOfferContainerData jobOffers = new JobOfferContainerData(config);
 
             allJobOffers = jobOffers.GetAllJobOffers();
 
@@ -38,7 +47,7 @@ namespace DeveloperPlatformView.Controllers
         }
         public IActionResult ShowJobOffer(int id) {
 
-            JobOfferItem jobOffer = new JobOfferItem();
+            JobOfferItem jobOffer = new JobOfferItem(config);
 
             JobOfferDto jobOfferDto = new JobOfferDto();
 
@@ -71,7 +80,7 @@ namespace DeveloperPlatformView.Controllers
             }
             else
             {
-                JobOfferItem jobOffer = new JobOfferItem();
+                JobOfferItem jobOffer = new JobOfferItem(config);
                 jobOffer.CreateJobOffer(jobOfferModel.Name, jobOfferModel.Description, 1, 1,1, "fulltime");
 
                 return RedirectToAction("Index");
@@ -82,7 +91,7 @@ namespace DeveloperPlatformView.Controllers
         public IActionResult UpdateJobOffer(int id)
         {
 
-            JobOfferItem jobOffer = new JobOfferItem();
+            JobOfferItem jobOffer = new JobOfferItem(config);
 
             JobOfferDto jobOfferDto = new JobOfferDto();
 
@@ -109,7 +118,7 @@ namespace DeveloperPlatformView.Controllers
             }
             else
             {
-                JobOfferItem jobOffer = new JobOfferItem();
+                JobOfferItem jobOffer = new JobOfferItem(config);
                 jobOffer.CreateJobOffer(jobOfferModel.Name, jobOfferModel.Description, 1, 1, 1, "fulltime");
 
                 return RedirectToAction("Index");
@@ -122,7 +131,7 @@ namespace DeveloperPlatformView.Controllers
         {
 
 
-            JobOfferItem jobOffer = new JobOfferItem();
+            JobOfferItem jobOffer = new JobOfferItem(config);
             
             jobOffer.DeleteJobOffer(1, id);
 

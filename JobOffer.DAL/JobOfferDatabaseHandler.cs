@@ -5,11 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
+using Microsoft.Extensions.Configuration;
+
 
 namespace DAL
 {
     public class JobOfferDatabaseHandler: DataHandler
     {
+
+        public JobOfferDatabaseHandler(IConfiguration config):base(config)
+        {
+
+        }
+
         public List<JobOfferDto> GetJoboffers() {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
             try

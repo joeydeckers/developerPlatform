@@ -6,17 +6,26 @@ using System.Threading.Tasks;
 using DAL;
 using Models;
 using Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace Business
 {
     public class JobOfferItem : IJobOfferItem
     {
 
-        JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
+        private IConfiguration config;
+        private JobOfferDatabaseHandler handler;
+
+        public JobOfferItem(IConfiguration config)
+        {
+            config = config;
+            handler = new JobOfferDatabaseHandler(config);
+        }
+
 
         public JobOfferDto GetJobOffer(int id)
         {
-            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(config);
 
             JobOfferDto jobOfferDto = handler.GetJoboffer(id);
 

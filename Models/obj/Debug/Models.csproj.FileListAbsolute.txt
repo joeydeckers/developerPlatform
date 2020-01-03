@@ -10,3 +10,12 @@ C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.csprojAssemblyR
 C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.dll
 C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.AccessControl.dll
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Permissions.dll
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.AccessControl.xml
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Permissions.xml
+C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.csproj.CopyComplete

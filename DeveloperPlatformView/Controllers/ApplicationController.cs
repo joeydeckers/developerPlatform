@@ -6,19 +6,27 @@ using Microsoft.AspNetCore.Mvc;
 using Business;
 using Models;
 using DeveloperPlatformView.Models;
-
+using Microsoft.Extensions.Configuration;
 
 namespace DeveloperPlatformView.Controllers
 {
     public class ApplicationController : Controller
     {
+        private IConfiguration config;
+
+        public ApplicationController(IConfiguration config)
+        {
+            config = config;
+        }
+
+
         public IActionResult Index()
         {
             List<ApplicationDto> allAplications = new List<ApplicationDto>();
 
             List<ApplicationModel> allApplicationModels = new List<ApplicationModel>();
 
-            ApplicationContainerData applications = new ApplicationContainerData();
+            ApplicationContainerData applications = new ApplicationContainerData(config);
 
             allAplications = applications.GetAllApplications();
 
@@ -91,7 +99,7 @@ namespace DeveloperPlatformView.Controllers
                 return View(applicationModel);
             }
 
-            JobSeeker jobSeeker = new JobSeeker();
+            JobSeeker jobSeeker = new JobSeeker(config);
             jobSeeker.CreateJobOffer(1, applicationModel.JobofferId, applicationModel.ApplicationText);
 
             return RedirectToAction("Index");

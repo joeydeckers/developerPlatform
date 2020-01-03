@@ -6,15 +6,24 @@ using System.Threading.Tasks;
 using Models;
 using DAL;
 using Interfaces;
+using Microsoft.Extensions.Configuration;
+
 
 namespace Business
 {
     public class ApplicationContainerData: IApplicationContainerData
     {
+        private IConfiguration config;
+
+        public ApplicationContainerData(IConfiguration config)
+        {
+            config = config;
+        }
+
         public List<ApplicationDto> GetAllApplications()
         {
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
-            ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler();
+            ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler(config);
 
             List<ApplicationDto> applicationsFromDatabase = handler.GetAllApplications();
 

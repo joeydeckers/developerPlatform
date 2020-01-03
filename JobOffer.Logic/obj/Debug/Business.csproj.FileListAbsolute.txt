@@ -16,3 +16,13 @@ C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\Business.cspro
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\Business.csproj.CopyComplete
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.dll
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.pdb
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.AccessControl.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Permissions.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.AccessControl.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Permissions.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using Interfaces;
+using Microsoft.Extensions.Configuration;
 using Models;
 
 namespace Business
@@ -12,10 +13,19 @@ namespace Business
 
     public class JobOfferContainerData : IJobOfferContainerData
     {
+        private IConfiguration config;
+
+
+        public JobOfferContainerData(IConfiguration config)
+        {
+            config = config;
+        }
+
         public List<JobOfferDto> GetAllJobOffers()
         {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
-            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler();
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(config);
+
 
             var jobOffersFromDatabse = handler.GetJoboffers();
 
