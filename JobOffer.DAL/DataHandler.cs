@@ -19,7 +19,7 @@ namespace DAL
             //Try to get the config if not catch to default
             try
             {
-                connectionString = config.GetSection("ConnectionStrings")["database"];
+                connectionString = config.GetSection("ConnectionStrings")["ConnectionStrings:database"];
             }
             catch
             {

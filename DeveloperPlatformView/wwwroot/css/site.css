@@ -82,3 +82,13 @@ body {
 .companies img {
     height: 100px !important;
 }
+
+.info-section{
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.info-text {
+    font-size: 16px;
+    color: #888888;
+}
