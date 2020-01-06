@@ -11,13 +11,13 @@ namespace Business
 {
     public class JobSeeker: User
     {
-        private IConfiguration config;
+        private IConfiguration configFile;
         private ApplicationDatabaseHandler handler; 
 
         public JobSeeker(IConfiguration config)
         {
-            config = config;
-            handler = new ApplicationDatabaseHandler(config);
+            configFile = config;
+            handler = new ApplicationDatabaseHandler(configFile);
         }
 
 

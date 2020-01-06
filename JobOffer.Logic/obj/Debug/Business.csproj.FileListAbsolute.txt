@@ -26,3 +26,31 @@ C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Securit
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Database1.mdf
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Database1_log.ldf
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Database2.mdf
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Database2_log.ldf
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\JobOfferLogic.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\JobOfferLogic.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Interfaces.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\JobOffer.DAL.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Models.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Permissions.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Interfaces.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\JobOffer.DAL.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\JobOffer.DAL.dll.config
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Models.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Permissions.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.pdb

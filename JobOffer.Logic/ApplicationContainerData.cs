@@ -13,17 +13,17 @@ namespace Business
 {
     public class ApplicationContainerData: IApplicationContainerData
     {
-        private IConfiguration config;
+        private IConfiguration configFile;
 
         public ApplicationContainerData(IConfiguration config)
         {
-            config = config;
+            configFile = config;
         }
 
         public List<ApplicationDto> GetAllApplications()
         {
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
-            ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler(config);
+            ApplicationDatabaseHandler handler = new ApplicationDatabaseHandler(configFile);
 
             List<ApplicationDto> applicationsFromDatabase = handler.GetAllApplications();
 

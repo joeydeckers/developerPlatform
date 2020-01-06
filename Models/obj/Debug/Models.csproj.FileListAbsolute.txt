@@ -19,3 +19,12 @@ C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Access
 C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Permissions.xml
 C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Security.Permissions.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Security.Permissions.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Models\obj\Debug\Models.csproj.CopyComplete

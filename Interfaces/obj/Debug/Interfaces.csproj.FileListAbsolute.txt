@@ -68,3 +68,13 @@ C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\bin\Debug\System.Security.Pe
 C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\JoeyD\Desktop\developerPlatform\Interfaces\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Security.Permissions.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Security.Permissions.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\Interfaces\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml

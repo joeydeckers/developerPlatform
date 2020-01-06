@@ -11,20 +11,26 @@ namespace DAL
 {
     public class DataHandler {
 
+        public static string connectionString { get; private set; }
 
-        public string connectionString { get; private set; }
+        private static string SiyString { get; set; }
+        public static void SetConnectionString(string conString)
+        {
+            connectionString = conString;
+        }
+
 
         public DataHandler(IConfiguration config)
         {
             //Try to get the config if not catch to default
-            try
-            {
-                connectionString = config.GetSection("ConnectionStrings")["ConnectionStrings:database"];
-            }
-            catch
-            {
-                connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
-            }
+            //try
+            //{
+            //    connectionString = config.GetSection("ConnectionStrings")["database"];
+            //}
+            //catch
+            //{
+            //    connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
+            //}
 
         }
 

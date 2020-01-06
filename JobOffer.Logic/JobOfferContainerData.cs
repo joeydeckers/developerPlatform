@@ -13,19 +13,18 @@ namespace Business
 
     public class JobOfferContainerData : IJobOfferContainerData
     {
-        private IConfiguration config;
+        private IConfiguration configFile;
 
 
         public JobOfferContainerData(IConfiguration config)
         {
-            config = config;
+            configFile = config;
         }
 
         public List<JobOfferDto> GetAllJobOffers()
         {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
-            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(config);
-
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(configFile);
 
             var jobOffersFromDatabse = handler.GetJoboffers();
 

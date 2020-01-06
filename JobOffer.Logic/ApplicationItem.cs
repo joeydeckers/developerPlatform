@@ -13,12 +13,12 @@ namespace Business
 {
     public class ApplicationItem:IApplicationItem
     {
-        private IConfiguration config;
+        private IConfiguration configFile;
         private ApplicationDatabaseHandler handler;
-        public ApplicationItem()
+        public ApplicationItem(IConfiguration config)
         {
-            config = config;
-            handler = new ApplicationDatabaseHandler(config);
+            configFile = config;
+            handler = new ApplicationDatabaseHandler(configFile);
 
         }
 
