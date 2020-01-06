@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Business;
 using Models;
 using System.Collections.Generic;
+using Microsoft.Extensions.Configuration;
 
 namespace UnitTests
 {
@@ -13,7 +14,7 @@ namespace UnitTests
         public void GetAllApplicationsMustSucceed()
         {
             //arrange
-            ApplicationContainerData applicationContainer = new ApplicationContainerData();
+            ApplicationContainerData applicationContainer = new ApplicationContainerData(IConfiguration config);
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
 
             //act

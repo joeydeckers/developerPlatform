@@ -13,7 +13,6 @@ namespace DAL
 
         public static string connectionString { get; private set; }
 
-        private static string SiyString { get; set; }
         public static void SetConnectionString(string conString)
         {
             connectionString = conString;

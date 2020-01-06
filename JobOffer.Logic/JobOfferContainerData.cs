@@ -14,11 +14,12 @@ namespace Business
     public class JobOfferContainerData : IJobOfferContainerData
     {
         private IConfiguration configFile;
+        private string testString;
 
-
-        public JobOfferContainerData(IConfiguration config)
+        public JobOfferContainerData(IConfiguration config, string test)
         {
             configFile = config;
+            testString = test;
         }
 
         public List<JobOfferDto> GetAllJobOffers()

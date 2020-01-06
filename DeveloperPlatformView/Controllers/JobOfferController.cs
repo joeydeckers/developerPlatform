@@ -15,9 +15,12 @@ namespace DeveloperPlatformView.Controllers
     public class JobOfferController : Controller
     {
         private IConfiguration ConfigFile;
+        public static string testString { get; private set; }
+
 
         public JobOfferController(IConfiguration config) {
             ConfigFile = config;
+            testString = ConfigFile["ConnectionStrings:database"];
         }
 
         public IActionResult Index()
@@ -26,7 +29,7 @@ namespace DeveloperPlatformView.Controllers
 
             List<JobOfferModel> allJobOfferModels = new List<JobOfferModel>();
 
-            JobOfferContainerData jobOffers = new JobOfferContainerData(ConfigFile);
+            JobOfferContainerData jobOffers = new JobOfferContainerData(ConfigFile, testString);
 
             allJobOffers = jobOffers.GetAllJobOffers();
 
