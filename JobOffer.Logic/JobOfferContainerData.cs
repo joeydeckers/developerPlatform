@@ -25,7 +25,7 @@ namespace Business
         public List<JobOfferDto> GetAllJobOffers()
         {
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
-            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(configFile);
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(configFile, testString);
 
             var jobOffersFromDatabse = handler.GetJoboffers();
 

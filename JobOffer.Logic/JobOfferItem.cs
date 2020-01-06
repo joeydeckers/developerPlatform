@@ -19,13 +19,13 @@ namespace Business
         public JobOfferItem(IConfiguration config)
         {
             configFile = config;
-            handler = new JobOfferDatabaseHandler(configFile);
+            handler = new JobOfferDatabaseHandler(configFile, "temp");
         }
 
 
         public JobOfferDto GetJobOffer(int id)
         {
-            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(configFile);
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(configFile, "temp");
 
             JobOfferDto jobOfferDto = handler.GetJoboffer(id);
 
