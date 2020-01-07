@@ -13,10 +13,12 @@ namespace DeveloperPlatformView.Controllers
     public class ApplicationController : Controller
     {
         private IConfiguration configFile;
+        public static string ConnectionString { get; private set; }
 
         public ApplicationController(IConfiguration config)
         {
             configFile = config;
+            ConnectionString = config["ConnectionStrings:database"];
         }
 
 
@@ -26,7 +28,7 @@ namespace DeveloperPlatformView.Controllers
 
             List<ApplicationModel> allApplicationModels = new List<ApplicationModel>();
 
-            ApplicationContainerData applications = new ApplicationContainerData(configFile);
+            ApplicationContainerData applications = new ApplicationContainerData(ConnectionString);
 
             allAplications = applications.GetAllApplications();
 
@@ -50,7 +52,7 @@ namespace DeveloperPlatformView.Controllers
         [HttpGet]
         public IActionResult ShowApplication(int id) {
 
-            ApplicationItem applcation = new ApplicationItem(configFile);
+            ApplicationItem applcation = new ApplicationItem(ConnectionString);
 
             ApplicationDto applicationDto = new ApplicationDto();
 
@@ -71,7 +73,7 @@ namespace DeveloperPlatformView.Controllers
         [HttpGet]
         public IActionResult CreateApplication(int id)
         {
-            ApplicationItem applcation = new ApplicationItem(configFile);
+            ApplicationItem applcation = new ApplicationItem(ConnectionString);
 
             ApplicationDto applicationDto = new ApplicationDto();
 
@@ -99,7 +101,7 @@ namespace DeveloperPlatformView.Controllers
                 return View(applicationModel);
             }
 
-            JobSeeker jobSeeker = new JobSeeker(configFile);
+            JobSeeker jobSeeker = new JobSeeker(ConnectionString);
             jobSeeker.CreateJobOffer(1, applicationModel.JobofferId, applicationModel.ApplicationText);
 
             return RedirectToAction("Index");

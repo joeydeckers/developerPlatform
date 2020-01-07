@@ -12,9 +12,9 @@ namespace DAL
     public class ApplicationDatabaseHandler:DataHandler
     {
 
-        public ApplicationDatabaseHandler(IConfiguration config) : base(config)
+        public ApplicationDatabaseHandler(string conString)
         {
-
+            DataHandler.SetConnectionString(conString);
         }
         public List<ApplicationDto> GetAllApplications()
         {

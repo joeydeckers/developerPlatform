@@ -19,7 +19,7 @@ namespace DAL
         }
 
 
-        public DataHandler(IConfiguration config)
+        public DataHandler()
         {
             //Try to get the config if not catch to default
             //try

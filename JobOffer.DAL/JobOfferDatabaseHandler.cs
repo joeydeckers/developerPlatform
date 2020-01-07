@@ -13,7 +13,7 @@ namespace DAL
     public class JobOfferDatabaseHandler: DataHandler
     {
 
-        public JobOfferDatabaseHandler(IConfiguration config, string conString):base(config)
+        public JobOfferDatabaseHandler(string conString)
         {
             //DataHandler.SetConnectionString(config["ConnectionStrings:database"]);
             DataHandler.SetConnectionString(conString);

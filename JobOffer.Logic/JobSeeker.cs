@@ -12,12 +12,13 @@ namespace Business
     public class JobSeeker: User
     {
         private IConfiguration configFile;
-        private ApplicationDatabaseHandler handler; 
+        private ApplicationDatabaseHandler handler;
+        private string ConnectionString;
 
-        public JobSeeker(IConfiguration config)
+        public JobSeeker(string givenString)
         {
-            configFile = config;
-            handler = new ApplicationDatabaseHandler(configFile);
+            ConnectionString = givenString;
+            handler = new ApplicationDatabaseHandler(ConnectionString);
         }
 
 
