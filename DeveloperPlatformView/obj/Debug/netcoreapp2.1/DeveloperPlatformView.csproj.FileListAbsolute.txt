@@ -5,7 +5,6 @@ C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcore
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\DeveloperPlatformView.pdb
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\DeveloperPlatformView.Views.dll
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\bin\Debug\netcoreapp2.1\DeveloperPlatformView.Views.pdb
-C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.csprojAssemblyReference.cache
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.csproj.CoreCompileInputs.cache
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.RazorAssemblyInfo.cache
 C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.RazorAssemblyInfo.cs
@@ -206,3 +205,4 @@ C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcore
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\Application\CreateApplication.g.cshtml.cs
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\Application\Index.g.cshtml.cs
 C:\Users\Joey Deckers\Documents\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\Razor\Views\Application\ShowApplication.g.cshtml.cs
+C:\Users\JoeyD\Desktop\developerPlatform\DeveloperPlatformView\obj\Debug\netcoreapp2.1\DeveloperPlatformView.csprojAssemblyReference.cache

@@ -124,7 +124,7 @@ namespace DAL
         public void DeleteJobOffer(int companyId, int jobOfferId)
         {
             //string query = "DELETE FROM JobOffers WHERE companyId =  @CompanyId AND idJoboffer = @JobOfferId";
-            string query = "DELETE FROM joboffers WHERE companyId = " + companyId + "AND idJoboffer = "+ jobOfferId;
+            string query = "DELETE FROM joboffers WHERE companyId = " + companyId + " AND idJoboffer = "+ jobOfferId;
 
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();

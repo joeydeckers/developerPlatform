@@ -13331,23 +13331,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joey Deckers\\.nuget\\packages\\": {},
+    "C:\\Users\\JoeyD\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
+      "projectUniqueName": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
       "projectName": "DeveloperPlatformView",
-      "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
-      "packagesPath": "C:\\Users\\Joey Deckers\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\DeveloperPlatformView\\obj\\",
+      "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\DeveloperPlatformView.csproj",
+      "packagesPath": "C:\\Users\\JoeyD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\DeveloperPlatformView\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Joey Deckers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JoeyD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13360,11 +13360,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\Business.csproj": {
-              "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\JobOffer.Logic\\Business.csproj"
+            "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\Business.csproj": {
+              "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\JobOffer.Logic\\Business.csproj"
             },
-            "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\Joey Deckers\\Documents\\developerPlatform\\Models\\Models.csproj"
+            "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\JoeyD\\Desktop\\developerPlatform\\Models\\Models.csproj"
             }
           }
         }

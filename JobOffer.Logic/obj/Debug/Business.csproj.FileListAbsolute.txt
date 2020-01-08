@@ -61,3 +61,10 @@ C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Bounc
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Renci.SshNet.dll
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Google.Protobuf.xml
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Renci.SshNet.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Google.Protobuf.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\MySql.Data.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Renci.SshNet.dll
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Google.Protobuf.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\MySql.Data.xml
+C:\Users\JoeyD\Desktop\developerPlatform\JobOffer.Logic\bin\Debug\Renci.SshNet.xml
