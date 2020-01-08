@@ -40,3 +40,4 @@ C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\Renci.SshNet.dll
 C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\Google.Protobuf.xml
 C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\MySql.Data.xml
 C:\Users\JoeyD\Desktop\developerPlatform\Models\bin\Debug\Renci.SshNet.xml
+C:\Users\JoeyD\Desktop\developerPlatform\Models\obj\Debug\Models.csprojAssemblyReference.cache

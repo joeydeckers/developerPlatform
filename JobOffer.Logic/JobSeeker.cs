@@ -9,9 +9,8 @@ using Microsoft.Extensions.Configuration;
 
 namespace Business
 {
-    public class JobSeeker: User
+    public class JobSeeker: User, IJobSeeker
     {
-        private IConfiguration configFile;
         private ApplicationDatabaseHandler handler;
         private string ConnectionString;
 
@@ -19,6 +18,8 @@ namespace Business
         {
             ConnectionString = givenString;
             handler = new ApplicationDatabaseHandler(ConnectionString);
+            Name = "Joey";
+            Email = "deckersjoey@gmail.com";
         }
 
 
