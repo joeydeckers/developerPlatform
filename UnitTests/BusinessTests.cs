@@ -14,7 +14,7 @@ namespace UnitTests
         public void GetAllApplicationsMustSucceed()
         {
             //arrange
-            ApplicationContainerData applicationContainer = new ApplicationContainerData(IConfiguration config);
+            ApplicationContainerData applicationContainer = new ApplicationContainerData("TEMP");
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
 
             //act
@@ -28,7 +28,7 @@ namespace UnitTests
         public void GetApplicationMustSucceed()
         {
             //arrange
-            ApplicationItem application = new ApplicationItem();
+            ApplicationItem application = new ApplicationItem("tEMP");
             ApplicationDto applicationDto = new ApplicationDto();
 
             //act

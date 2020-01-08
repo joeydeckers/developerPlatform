@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Models;
-using Microsoft.Extensions.Configuration;
-
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace DAL
 {
@@ -24,12 +20,12 @@ namespace DAL
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString)) {
-                    string query = "select * from JobOffers";
-                    using (SqlCommand command = new SqlCommand(query, conn))
+                using (MySqlConnection conn = new MySqlConnection(connectionString)) {
+                    string query = "select * from joboffers";
+                    using (MySqlCommand command = new MySqlCommand(query, conn))
                     {
                         conn.Open();
-                        SqlDataReader reader = command.ExecuteReader();
+                        MySqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
                             JobOfferDto dto = new JobOfferDto();
@@ -46,7 +42,7 @@ namespace DAL
                     }
                 }
             }
-            catch (SqlException exp)
+            catch (MySqlException exp)
             {
                 
             }
@@ -60,13 +56,13 @@ namespace DAL
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    string query = "select * from JobOffers where idJoboffer = " + id;
-                    using (SqlCommand command = new SqlCommand(query, conn))
+                    string query = "select * from joboffers where idJoboffer = " + id;
+                    using (MySqlCommand command = new MySqlCommand(query, conn))
                     {
                         conn.Open();
-                        SqlDataReader reader = command.ExecuteReader();
+                        MySqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
                             dto.IdJoboffer = reader.GetInt32(0);
@@ -81,7 +77,7 @@ namespace DAL
                 }
             }
 
-            catch (SqlException exp)
+            catch (MySqlException exp)
             {
 
             }
@@ -90,12 +86,12 @@ namespace DAL
 
         public void AddJobOffer(string name, string description, int companyId, int catId, int applicationId, string jobType)
         {
-            string query = "insert into JobOffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType)";
+            string query = "insert into joboffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType)";
 
-            SqlConnection conn = new SqlConnection(connectionString);
+            MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
             
-            SqlCommand cmd = new SqlCommand(query, conn);
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@Name", name);
             cmd.Parameters.AddWithValue("@Description", description);
             cmd.Parameters.AddWithValue("@CompanyId", companyId);
@@ -108,12 +104,12 @@ namespace DAL
 
         public void UpdateJobOffer(string name, string description, int companyId, int catId, int applicationId, string jobType)
         {
-            string query = "UPDATE JobOffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType) WHERE companyId = "+ companyId;
+            string query = "UPDATE joboffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType) WHERE companyId = " + companyId;
 
-            SqlConnection conn = new SqlConnection(connectionString);
+            MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand(query, conn);
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@Name", name);
             cmd.Parameters.AddWithValue("@Description", description);
             cmd.Parameters.AddWithValue("@CompanyId", companyId);
@@ -128,12 +124,12 @@ namespace DAL
         public void DeleteJobOffer(int companyId, int jobOfferId)
         {
             //string query = "DELETE FROM JobOffers WHERE companyId =  @CompanyId AND idJoboffer = @JobOfferId";
-            string query = "DELETE FROM JobOffers WHERE companyId = "+companyId + "AND idJoboffer = "+ jobOfferId;
+            string query = "DELETE FROM joboffers WHERE companyId = " + companyId + "AND idJoboffer = "+ jobOfferId;
 
-            SqlConnection conn = new SqlConnection(connectionString);
+            MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
     
-            SqlCommand cmd = new SqlCommand(query, conn);
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@CompanyId", companyId);
             cmd.Parameters.AddWithValue("@JobOfferId", jobOfferId);
 

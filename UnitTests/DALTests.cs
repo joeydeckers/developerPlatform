@@ -13,7 +13,7 @@ namespace UnitTests
         public void ReadJobOffersMustSucceed()
         {
             //arrange
-            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler();
+            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler("temp");
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
 
             //act
@@ -28,7 +28,7 @@ namespace UnitTests
         public void ReadJobOfferMustSucceed()
         {
             //arrange
-            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler();
+            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler("temp");
             JobOfferDto jobOffer = new JobOfferDto();
 
             //act
@@ -43,7 +43,7 @@ namespace UnitTests
         public void ReadJobOfferMustFail()
         {
             //arrange
-            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler();
+            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler("temp");
             JobOfferDto jobOffer = new JobOfferDto();
             JobOfferDto jobOfferWrong = new JobOfferDto();
 
@@ -59,7 +59,7 @@ namespace UnitTests
         public void TestAddJobOfferMustSucceed()
         {
             //arrange
-            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler();
+            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler("temp");
             List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
 
             //act

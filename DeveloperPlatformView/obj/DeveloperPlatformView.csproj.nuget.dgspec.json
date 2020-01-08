@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[2.1.10, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[4.7.0, )"

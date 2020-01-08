@@ -54,3 +54,10 @@ C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\Busin
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\Business.csproj.CopyComplete
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.dll
 C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\obj\Debug\JobOfferLogic.pdb
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\MySql.Data.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\MySql.Data.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Google.Protobuf.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Renci.SshNet.dll
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Google.Protobuf.xml
+C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.Logic\bin\Debug\Renci.SshNet.xml

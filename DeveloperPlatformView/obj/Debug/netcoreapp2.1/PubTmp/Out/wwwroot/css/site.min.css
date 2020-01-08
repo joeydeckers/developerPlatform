@@ -1,0 +1,94 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/*Mijn css*/
+
+#landing-section {
+    position: relative;
+    top: 80px;
+    margin-bottom: 80px;
+}
+
+    #landing-section img {
+        display: block;
+        margin: 0 auto;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.17);
+        height: 700px;
+    }
+
+
+.landing-text {
+    position: relative;
+    top: 180px;
+}
+
+    .landing-text h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+        margin-bottom: 35px;
+    }
+
+    .landing-text p {
+        font-size: 19px;
+        color: #888888;
+    }
+
+.companies {
+    margin-top: 35px;
+    padding: 30px;
+    background: #f7f7f7;
+    overflow: auto;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+    .companies img {
+        height: 100px !important;
+    }
+
+.info-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-text {
+    font-size: 16px;
+    color: #888888;
+}

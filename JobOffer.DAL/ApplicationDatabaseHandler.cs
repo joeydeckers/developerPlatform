@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Models;
 using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace DAL
 {
@@ -21,14 +22,14 @@ namespace DAL
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    string query = "select * from Applications";
+                    string query = "select * from applications";
 
-                    using (SqlCommand command = new SqlCommand(query, conn))
+                    using (MySqlCommand command = new MySqlCommand(query, conn))
                     {
                         conn.Open();
-                        SqlDataReader reader = command.ExecuteReader();
+                        MySqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
                             ApplicationDto dto = new ApplicationDto();
@@ -42,7 +43,7 @@ namespace DAL
                     }
                 }
             }
-            catch (SqlException exp)
+            catch (MySqlException exp)
             {
                
             }
@@ -55,13 +56,13 @@ namespace DAL
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    string query = "select * from Applications where idApplication = " + id;
-                    using (SqlCommand command = new SqlCommand(query, conn))
+                    string query = "select * from applications where idApplication = " + id;
+                    using (MySqlCommand command = new MySqlCommand(query, conn))
                     {
                         conn.Open();
-                        SqlDataReader reader = command.ExecuteReader();
+                        MySqlDataReader reader = command.ExecuteReader();
                         while (reader.Read())
                         {
                             dto.IdApplication = reader.GetInt32(0);
@@ -73,7 +74,7 @@ namespace DAL
                 }
             }
 
-            catch (SqlException exp)
+            catch (MySqlException exp)
             {
 
             }
@@ -82,12 +83,12 @@ namespace DAL
 
         public void CreateApplication(int userId, int jobOfferId, string applicationText)
         {
-            string query = "insert into Applications(userId, jobOfferId, applicationText) values( @UserId, @JobOfferId, @ApplicationText)";
+            string query = "insert into applications(userId, jobOfferId, applicationText) values( @UserId, @JobOfferId, @ApplicationText)";
 
-            SqlConnection conn = new SqlConnection(connectionString);
+            MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
 
-            SqlCommand cmd = new SqlCommand(query, conn);
+            MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@UserId", userId);
             cmd.Parameters.AddWithValue("@JobOfferId", jobOfferId);
             cmd.Parameters.AddWithValue("@ApplicationText", applicationText);

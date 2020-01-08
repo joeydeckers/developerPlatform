@@ -39,5 +39,7 @@ namespace DAL
         // voor laptop
         //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Joey Deckers\Documents\developerPlatform\JobOffer.DAL\Database1.mdf;Integrated Security=True";
 
+
+        // school Server=studmysql01.fhict.local;Uid=dbi425384;Database=dbi425384;Pwd=Dct8uPYy6l;
     }
 }
