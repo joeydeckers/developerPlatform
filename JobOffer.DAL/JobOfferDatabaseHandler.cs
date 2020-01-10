@@ -102,38 +102,60 @@ namespace DAL
             cmd.ExecuteReader();
         }
 
-        public void UpdateJobOffer(string name, string description, int companyId, int catId, int applicationId, string jobType)
+        public bool UpdateJobOffer(string name, string description, int companyId, int catId, int applicationId, string jobType)
         {
             string query = "UPDATE joboffers(name, description, companyId, catId, applicationId, jobType) values( @Name, @Description, @CompanyId, @CatId, @ApplicationId, @JobType) WHERE companyId = " + companyId;
 
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            conn.Open();
+            try
+            {
+                MySqlConnection conn = new MySqlConnection(connectionString);
+                conn.Open();
 
-            MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@Name", name);
-            cmd.Parameters.AddWithValue("@Description", description);
-            cmd.Parameters.AddWithValue("@CompanyId", companyId);
-            cmd.Parameters.AddWithValue("@CatId", catId);
-            cmd.Parameters.AddWithValue("@ApplicationId", applicationId);
-            cmd.Parameters.AddWithValue("@JobType", jobType);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Name", name);
+                cmd.Parameters.AddWithValue("@Description", description);
+                cmd.Parameters.AddWithValue("@CompanyId", companyId);
+                cmd.Parameters.AddWithValue("@CatId", catId);
+                cmd.Parameters.AddWithValue("@ApplicationId", applicationId);
+                cmd.Parameters.AddWithValue("@JobType", jobType);
 
-            cmd.ExecuteReader();
+                cmd.ExecuteReader();
+
+                return true;
+            }
+
+            catch (MySqlException exp)
+            {
+                return false;
+            }
+
+            return true;
         }
 
 
-        public void DeleteJobOffer(int companyId, int jobOfferId)
+        public bool DeleteJobOffer(int companyId, int jobOfferId)
         {
             //string query = "DELETE FROM JobOffers WHERE companyId =  @CompanyId AND idJoboffer = @JobOfferId";
             string query = "DELETE FROM joboffers WHERE companyId = " + companyId + " AND idJoboffer = "+ jobOfferId;
 
-            MySqlConnection conn = new MySqlConnection(connectionString);
-            conn.Open();
-    
-            MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@CompanyId", companyId);
-            cmd.Parameters.AddWithValue("@JobOfferId", jobOfferId);
+            try
+            {
+                MySqlConnection conn = new MySqlConnection(connectionString);
+                conn.Open();
 
-            cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@CompanyId", companyId);
+                cmd.Parameters.AddWithValue("@JobOfferId", jobOfferId);
+
+                cmd.ExecuteReader();
+            }
+            catch (MySqlException exp)
+            {
+                return false;
+            }
+            return true;
+
+
         }
     }
 

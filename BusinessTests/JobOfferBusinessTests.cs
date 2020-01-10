@@ -1,0 +1,64 @@
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Business;
+using DAL;
+using Models;
+using System.Collections.Generic;
+
+namespace BusinessTests
+{
+    [TestClass]
+    public class JobOfferBusinessTests
+    {
+        private string connectionString = "Server=php.meelsnet.nl;Uid=jdeckers;Database=jdeckers;Pwd=Hoi123;";
+
+        [TestMethod]
+        public void GetJobOffersMustSucceed()
+        {
+            //arrange
+            JobOfferContainerData jobOfferDataHandler = new JobOfferContainerData(connectionString);
+            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
+
+            //act
+            allJobOffers = jobOfferDataHandler.GetAllJobOffers();
+
+            //assert
+
+            Assert.IsNotNull(allJobOffers);
+        }
+
+        [TestMethod]
+        public void GetJobOfferMustSucceed()
+        {
+            //arrange
+            JobOfferItem jobOfferDataHandler = new JobOfferItem(connectionString);
+            JobOfferDto jobOffer = new JobOfferDto();
+
+            //act
+            jobOffer = jobOfferDataHandler.GetJobOffer(1);
+
+            //assert
+
+            Assert.IsNotNull(jobOffer);
+        }
+
+        [TestMethod]
+        public void CreateJobOfferMustSucceed()
+        {
+            //arrange
+            JobOfferItem jobOffer = new JobOfferItem(connectionString);
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(connectionString);
+            JobOfferContainerData jobOfferDataHandler = new JobOfferContainerData(connectionString);
+            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
+
+
+            //act
+            jobOffer.CreateJobOffer("testUnit", "test", 1, 1, 100, "Fulltime");
+            allJobOffers = jobOfferDataHandler.GetAllJobOffers();
+            int index = allJobOffers.Count +1;
+            //assert
+
+            Assert.AreEqual("testUnit", handler.GetJoboffer(index).Name);
+        }
+    }
+}
