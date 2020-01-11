@@ -104,7 +104,7 @@ namespace UnitTests
         }
 
         //[TestMethod]
-        //public void DeleteUpdateJobOfferMustSucceed()
+        //public void DeleteJobOfferMustSucceed()
         //{
         //    //arrange
         //    JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler(connectionString);

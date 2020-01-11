@@ -55,10 +55,50 @@ namespace BusinessTests
             //act
             jobOffer.CreateJobOffer("testUnit", "test", 1, 1, 100, "Fulltime");
             allJobOffers = jobOfferDataHandler.GetAllJobOffers();
-            int index = allJobOffers.Count +1;
+            JobOfferDto jobOfferDtoToTest = allJobOffers.Find(x => x.Name.Contains("testUnit"));
             //assert
 
-            Assert.AreEqual("testUnit", handler.GetJoboffer(index).Name);
+            Assert.AreEqual("testUnit", jobOfferDtoToTest.Name);
         }
+
+        [TestMethod]
+        public void DeleteJobOfferMustSucceed()
+        {
+            //arrange
+            JobOfferItem jobOffer = new JobOfferItem(connectionString);
+            JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(connectionString);
+            JobOfferContainerData jobOfferDataHandler = new JobOfferContainerData(connectionString);
+            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
+
+
+            //act
+            allJobOffers = jobOfferDataHandler.GetAllJobOffers();
+            int index = allJobOffers.Count + 1;
+            jobOffer.DeleteJobOffer(1, index);
+
+            //assert
+
+            Assert.AreEqual(allJobOffers.Count, index-1);
+        }
+
+        //[TestMethod]
+        //public void UpdateJobOfferMustSucceed()
+        //{
+        //    //arrange
+        //    JobOfferItem jobOffer = new JobOfferItem(connectionString);
+        //    JobOfferDatabaseHandler handler = new JobOfferDatabaseHandler(connectionString);
+        //    JobOfferContainerData jobOfferDataHandler = new JobOfferContainerData(connectionString);
+        //    List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
+
+
+        //    //act
+        //    allJobOffers = jobOfferDataHandler.GetAllJobOffers();
+        //    int index = allJobOffers.Count + 1;
+        //    jobOffer.DeleteJobOffer(1, index);
+
+        //    //assert
+
+        //    Assert.AreEqual(allJobOffers.Count, index - 1);
+        //}
     }
 }

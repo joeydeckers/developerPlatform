@@ -11,6 +11,6 @@ namespace Interfaces
         string Name { get; set; }
         string Email { get; set; }
 
-        void CreateJobOffer(int userId, int jobOfferId, string applicationText);
+        void ApplyToJobOffer(int userId, int jobOfferId, string applicationText);
     }
 }

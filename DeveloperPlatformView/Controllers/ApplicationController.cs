@@ -102,7 +102,7 @@ namespace DeveloperPlatformView.Controllers
             }
 
             JobSeeker jobSeeker = new JobSeeker(ConnectionString);
-            jobSeeker.CreateJobOffer(1, applicationModel.JobofferId, applicationModel.ApplicationText);
+            jobSeeker.ApplyToJobOffer(1, applicationModel.JobofferId, applicationModel.ApplicationText);
 
             return RedirectToAction("Index");
 

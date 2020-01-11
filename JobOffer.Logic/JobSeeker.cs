@@ -23,7 +23,7 @@ namespace Business
         }
 
 
-        public void CreateJobOffer(int userId, int jobOfferId, string applicationText)
+        public void ApplyToJobOffer(int userId, int jobOfferId, string applicationText)
         {
             handler.CreateApplication(userId, jobOfferId, applicationText);
         }
