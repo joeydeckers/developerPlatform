@@ -128,8 +128,6 @@ namespace DAL
             {
                 return false;
             }
-
-            return true;
         }
 
 

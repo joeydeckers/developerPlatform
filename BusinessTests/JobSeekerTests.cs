@@ -19,12 +19,13 @@ namespace BusinessTests
             JobSeeker jobSeekerTest = new JobSeeker(connectionString);
             ApplicationDatabaseHandler applicationDatabase = new ApplicationDatabaseHandler(connectionString);
             List<ApplicationDto> allApplications = new List<ApplicationDto>();
-
-
-            //act
             jobSeekerTest.ApplyToJobOffer(1, 1, "Test voor intergrationTest 12345");
             allApplications = applicationDatabase.GetAllApplications();
+
+            //act
+
             ApplicationDto applicationToTest = allApplications.Find(x => x.ApplicationText.Contains("Test voor intergrationTest 12345"));
+
             //assert
 
             Assert.AreEqual("Test voor intergrationTest 12345", applicationToTest.ApplicationText);

@@ -74,21 +74,6 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TestUpdateJobOfferMustSucceed()
-        {
-            //arrange
-            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler(connectionString);
-            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
-
-            //act
-            bool result = testHandler.UpdateJobOffer("TestUpdate", "test", 1, 1, 1, "Fulltime");
-            allJobOffers = testHandler.GetJoboffers();
-
-            //assert
-            Assert.IsTrue(result);
-        }
-
-        [TestMethod]
         public void TestUpdateJobOfferMustFail()
         {
             //arrange
@@ -98,34 +83,6 @@ namespace UnitTests
             //act
             bool result = testHandler.UpdateJobOffer("TestUpdate", "test", 1, 10000000, 1, "Fulltime");
             allJobOffers = testHandler.GetJoboffers();
-
-            //assert
-            Assert.IsFalse(result);
-        }
-
-        //[TestMethod]
-        //public void DeleteJobOfferMustSucceed()
-        //{
-        //    //arrange
-        //    JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler(connectionString);
-        //    List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
-
-        //    //act
-        //    bool result = testHandler.DeleteJobOffer(1, 31);
-
-        //    //assert
-        //    Assert.IsTrue(result);
-        //}
-
-        [TestMethod]
-        public void DeleteUpdateJobOfferMustFail()
-        {
-            //arrange
-            JobOfferDatabaseHandler testHandler = new JobOfferDatabaseHandler(connectionString);
-            List<JobOfferDto> allJobOffers = new List<JobOfferDto>();
-
-            //act
-            bool result = testHandler.DeleteJobOffer(1, 2500);
 
             //assert
             Assert.IsFalse(result);

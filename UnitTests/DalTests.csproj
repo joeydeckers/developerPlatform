@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="JobOfferDALTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ApplicationDALTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="appsettings.Development.json">

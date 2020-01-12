@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Business;
 using Models;
+using DAL;
 using System.Collections.Generic;
 
 namespace BusinessTests
@@ -39,6 +40,38 @@ namespace BusinessTests
             //assert
 
             Assert.IsNotNull(applicationDto);
+        }
+
+        [TestMethod]
+        public void IntergrationGetApplicationMustSucceed()
+        {
+            //arrange
+            ApplicationItem application = new ApplicationItem(connectionString);
+            ApplicationDatabaseHandler applicationDatabase = new ApplicationDatabaseHandler(connectionString);
+            List<ApplicationDto> allApplications = new List<ApplicationDto>();
+            allApplications = applicationDatabase.GetAllApplications();
+            //act
+            ApplicationDto applicationToTest = allApplications.Find(x => x.IdApplication.Equals(1));
+
+            //assert
+
+            Assert.AreEqual(1, applicationToTest.IdApplication);
+        }
+
+        [TestMethod]
+        public void IntergrationGetApplicationMustFail()
+        {
+            //arrange
+            ApplicationItem application = new ApplicationItem(connectionString);
+            ApplicationDatabaseHandler applicationDatabase = new ApplicationDatabaseHandler(connectionString);
+            List<ApplicationDto> allApplications = new List<ApplicationDto>();
+            allApplications = applicationDatabase.GetAllApplications();
+            //act
+            ApplicationDto applicationToTest = allApplications.Find(x => x.IdApplication.Equals(100000000));
+
+            //assert
+
+            Assert.IsNull(applicationToTest);
         }
 
         [TestMethod]
